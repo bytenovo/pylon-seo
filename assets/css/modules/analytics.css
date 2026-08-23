@@ -1,0 +1,9 @@
+        .pylon-analytics-root .pylon-status-card { text-align:center; }
+        .pylon-analytics-root .pylon-status-icon { font-size:22px; margin-bottom:4px; }
+        .pylon-analytics-root .pylon-status-value { font-size:28px; font-weight:800; color:#1e293b; }
+        .pylon-analytics-root .pylon-status-label { font-size:11px; color:#64748b; margin-top:2px; }
+        @media (max-width:1200px){ .pylon-analytics-root .pylon-status-grid { grid-template-columns:repeat(3,1fr) !important; } }
+        @media (max-width:782px){
+            .pylon-analytics-root .pylon-status-grid { grid-template-columns:repeat(2,1fr) !important; }
+            .pylon-analytics-root > div[style] { grid-template-columns:1fr !important; }
+        }

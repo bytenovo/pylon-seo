@@ -1,0 +1,7134 @@
+# Copyright (C) 2026 Bytenovo
+# This file is distributed under the GPL-2.0-or-later license.
+msgid ""
+msgstr ""
+"Project-Id-Version: Pylon SEO 1.3.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-15 01:03++0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: pylon-pot-gen\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: \n"
+
+msgid " /100"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid " chars"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid " days tracked"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid " headings"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid " images"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid " links"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid " long"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid " missing alt"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid " sentences"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid " short"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid " used"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid " w/s"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid " words"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "\"%1$s\" used %2$d times consecutively"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "%.1f%% density is high — may look spammy."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%.1f%% density — keyword used rarely."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%.1f%% text content."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%1$.1f%% density (%2$d mentions)."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%1$d URLs · Generated %2$s"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "%1$d of %2$d images (%3$d%%) lack width/height attributes."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%1$d of %2$d images have auto-generated or underscore filenames."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%1$d of %2$d images lack alt text."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%1$d%% of %2$d external links are nofollow."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%1$d%% of %2$d external links use nofollow."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d \"#\" placeholder links found."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d / 10–70 chars"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "%d / 50–160 chars"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "%d H2 subheadings found."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d JSON-LD schema block(s) found."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d URLs"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "%d characters — keep URLs under 75."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d characters."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d data points found"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "%d days since last update — very stale."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d days since last update."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d definitions found"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "%d deprecated media element(s)."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d elements use inline styles."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d external links found."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d external script(s)."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d external scripts may slow rendering."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d external scripts — heavy payload."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d failed"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d images — ensure they are optimized and lazy-loaded."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d images."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d inline-styled elements."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d internal links found."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d links point to \"#\" or have no href."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d lists found"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "%d paragraph(s) exceed 150 words."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d passed"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d question headings found"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "%d quotes/attributions found"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "%d step sequences found"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "%d stylesheet(s)."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d stylesheets — consider combining."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d total checks"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d warnings"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d words"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "%d words — aim for 30-100 word answer"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "%d words — good answer density"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "%d words — good content depth."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d%% of internal links use descriptive anchor text."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%d%% of internal links use descriptive anchors."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "%s schema active"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "1-2 sentence professional bio for schema markup."
+msgstr ""
+
+#: modules/AuthorEaat/AuthorEaatEngine.php
+
+msgid "1–4 columns on desktop"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "2+ internal links"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "301-redirect single attachment pages to their parent post to consolidate link equity"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "404 Error Monitor"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "404 Error Monitoring"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "404 Errors"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/analytics/AnalyticsOverview.php
+
+msgid "404 Not Found"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "404s (30 days)"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "A concise description displayed in search results for this archive page."
+msgstr ""
+
+#: modules/taxonomy-seo/TaxonomySEO.php
+
+msgid "A favicon is set."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "A meta description was found."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "A physical robots.txt file exists at the site root. It takes precedence over the editor and AI crawler rules below. Edit or remove that file to use Pylon."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "A title tag was found."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "A/B Promotions"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "A/B Testing"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "AEO"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "AEO (Answer Engine Optimization) Mode:"
+msgstr ""
+
+#: modules/AeoContent/AeoContent.php
+
+msgid "AEO / People-also-ask style questions"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "AEO Answer Mode"
+msgstr ""
+
+#: modules/AeoContent/AeoContent.php
+
+msgid "AEO question on a post — optimize for AI Overviews"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "AEO question set"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "AEO questions"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "AEO — Answer Engine Optimization"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "AI Analysis"
+msgstr ""
+
+#: modules/page-router/PageRouter.php
+
+msgid "AI Crawler Allowlist"
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "AI Features"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "AI meta generation, keyword suggestions, content briefs."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "AI-Powered SEO for WordPress"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "About page exists"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Above post content"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Access Pylon SEO Dashboard"
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Action"
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Actions"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+#: modules/LinkAssistant/LinkAssistant.php
+#: modules/redirects/RedirectEngine.php
+
+msgid "Active"
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Active Plugins"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Active Redirects"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/pulse/PulseDashboard.php
+#: modules/redirects/RedirectEngine.php
+
+msgid "Active Theme"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Add"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Add H2 subheadings to structure your content."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add Redirect"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Add a canonical URL to prevent duplicate-content issues."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add a compelling meta description between 120–160 characters."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add a descriptive title tag between 50–60 characters."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add a favicon for brand recognition."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add a focus keyword"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Add a lang attribute, e.g. lang=\"en\"."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add a personal website URL to the author profile."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Add a privacy policy page for legal compliance and trust."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Add a short direct answer"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Add a twitter:card tag (summary_large_image)."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add an OG image for social media previews."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Add an author name to the user profile for trust signals."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Add an og:description tag."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add an og:image (1200×630px recommended)."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add an og:title tag for social sharing."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add at least 1 external link to authoritative sources."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Add at least 1 internal link to related content."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Add at least an H1 and H2 headings to structure the page."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add at least one image to your content."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Add bullet points or numbered lists"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Add custom content before and after each post in your RSS feed, and control how feed readers see your posts."
+msgstr ""
+
+#: modules/RssOptimizer/RssOptimizer.php
+
+msgid "Add definition blocks for key terms"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Add descriptive alt text to all images for accessibility and SEO."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Add descriptive alt text to every image."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add exactly one H1 containing your primary keyword."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add expert quotes or cite authorities"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Add expert quotes or notable references to boost credibility."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Add headings"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Add images"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Add images, videos, or infographics to enrich content."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Add internal links to improve crawlability and engagement."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add internal links to related content to build topic clusters."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Add keyword to URL slug"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Add keyword to description"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Add keyword to title"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Add more headings to enable a table of contents."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Add more internal links to related content."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add more textual content; remove unused code."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add noindex to pages and posts that require a password to view."
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Add numbered steps for procedures"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Add power words like \"Ultimate\", \"Proven\", \"Essential\" to boost CTR."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Add question-style headings (What, Why, How)"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Add relevant images to improve engagement."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add schema.org markup (Article, FAQ, etc.) for rich results."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add structured data to your pages for enhanced search result appearances like rich snippets and FAQs."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Add subheadings every 200-300 words to break up content."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Add substantive text content."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add transition words (however, moreover, therefore) to connect ideas."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Add width and height to every img tag to prevent layout shift (CLS)."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Add your keyword to at least one image alt text."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Add your keyword to the SEO title for better rankings."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Add your keyword to the URL slug."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Add: &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"&gt;."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Adding video can increase engagement and time on page."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Additional URLs"
+msgstr ""
+
+#: modules/social/SocialLinks.php
+
+msgid "Additional features to keep your content fresh, track author expertise, and monitor site health."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Address"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Adds AEO score and checks to the Gutenberg sidebar"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Adds Allow/Disallow blocks for known AI crawlers below."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Adds JSON-LD structured data to all pages"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Adds a Topics section with category archive links."
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Adds cornerstone toggle to the meta box and warns on keyword conflicts"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Adds enhanced author meta and schema to author archive pages"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Advanced"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/meta/MetaEngine.php
+#: modules/page-router/PageRouter.php
+
+msgid "After Content"
+msgstr ""
+
+#: modules/RssOptimizer/RssOptimizer.php
+
+msgid "After body open"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Aggregated from all audits you have run"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Aim for 1500+ words for comprehensive topical coverage."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Aim for 40–100 words per paragraph for substantive content."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Alexa"
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Alexa site verification ID."
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "All"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "All %d images have alt attributes."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "All images have alt text"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "All images include width/height attributes."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "All images use descriptive filenames with hyphens."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "All links have valid hrefs."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "All pages look good!"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "All posts"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "All-time totals"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Allow"
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Alt Text"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Alt Text Coverage"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Alt text updated."
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "An error occurred."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/meta/MetaEngine.php
+
+msgid "Analytics"
+msgstr ""
+
+#: modules/page-router/PageRouter.php
+
+msgid "Anchor Text"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "Anthropic Claude crawler."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Append AI crawler rules to robots.txt"
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Appended under a Notes section (licensing, crawl preferences, brand facts)."
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Apple Intelligence / Apple AI training (separate from Applebot search)."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Applies the content blocks below to every feed item."
+msgstr ""
+
+#: modules/RssOptimizer/RssOptimizer.php
+
+msgid "Assign which user roles can access each SEO feature. Changes apply immediately after saving."
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Audit & Images"
+msgstr ""
+
+#: modules/page-router/PageRouter.php
+
+msgid "Audit Score Trend"
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+
+msgid "Audit and optimize images across your media library"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Audit complete."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Audit failed."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Auditing…"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Audits Run"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Author E-E-A-T"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Author E-E-A-T Profiles"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Author Photo URL"
+msgstr ""
+
+#: modules/AuthorEaat/AuthorEaatEngine.php
+
+msgid "Author bio is present (50+ words)"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Author has a website URL"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Author name is set"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Auto (Article)"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Auto (default)"
+msgstr ""
+
+#: modules/gutenberg/GutenbergSidebar.php
+
+msgid "Auto (recommended)"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Auto FAQ Detection"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Auto-Canonical URL"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Auto-Insert Breadcrumbs"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Auto-Insert Location"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Auto-Redirect on Slug Change"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Auto-detect"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Auto-detect FAQ content"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Auto-extracted from H2?"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Auto-generated"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Auto-scan active"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "Auto-scan inactive"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "Automatic hreflang for WPML, Polylang, TranslatePress, and Weglot — plus manual overrides. Stronger multilingual SEO than plugins that only “compat” translations."
+msgstr ""
+
+#: modules/Multilingual/MultilingualEngine.php
+
+msgid "Automatic sitemap generation for better indexing."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Automatically creates a 301 redirect when a post slug is changed"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Automatically detects FAQ blocks and generates FAQ schema"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Automatically generate XML sitemaps so search engines can quickly discover and index your content."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Automatically sets the self-referencing canonical URL on every page"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Available"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Average Score"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Average Score Trend"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Avg AEO Score"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Avg Citeability"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Avg SEO Score"
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Avg Score"
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+#: modules/pulse/PulseDashboard.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Avg paragraph < 100 words"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Avg sentence length <= 20 words"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Avg. %1$d words per paragraph (%2$d paragraphs, %3$d words)."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Avg. %d words per paragraph — break into shorter chunks."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Avg. %d words per paragraph — may lack depth."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Avoid generic openings like \"In this article...\" — be specific."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Bad Filenames"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Baidu Webmaster"
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Baidu Webmaster Tools verification code."
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Balanced internal/external links"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Batch complete: %1$d posts, %2$d links checked. Run again to continue."
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "Before Content"
+msgstr ""
+
+#: modules/RssOptimizer/RssOptimizer.php
+
+msgid "Bing Webmaster Tools"
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Bing Webmaster Tools verification code."
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Bloated HTML"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Blog"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+#: modules/schema/SchemaEngine.php
+
+msgid "Bot"
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Brackets in titles can increase CTR by attracting attention."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Brand"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Brand is set"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Breadcrumb"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Breadcrumbs"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Break content into sections with H2/H3 headings."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Break long paragraphs into shorter ones."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Break long paragraphs into shorter, scannable chunks."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Break long sentences into shorter ones. Aim for 15-20 words per sentence."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Broken Links"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+#: modules/page-router/PageRouter.php
+
+msgid "Broken URL"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "Business Information"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Business Name"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Business Type"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Business address and hours are configured globally under"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "ByteDance / TikTok-related crawler."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "CSV must have source_url and target_url columns."
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Cache (Transients)"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Cache Status"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Cached"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Cancel"
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+
+msgid "Cannot create ZIP archive."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Cannot create temp file."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Cannot open ZIP file."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Cannot read CSV file."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Cannot read file."
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Canonical URL"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+#: modules/taxonomy-seo/TaxonomySEO.php
+
+msgid "Canonical URL is set"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Canonical URL set"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Canonical URLs"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Capitalize Titles"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Categories"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Category Scores"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Category assigned"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Character between breadcrumb items (e.g. / → ›)"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Check Results"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Checked"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "Cite original data or statistics"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Citeability"
+msgstr ""
+
+#: modules/citeability/CiteabilityEngine.php
+#: modules/indexables/IndexablesEngine.php
+
+msgid "City"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Clean permalink"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Clear"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Clear direct answer in first 100 words"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Columns"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Combine and minify CSS files."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Comma-separated IDs to hide (e.g. checkout, cart)"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Comma-separated keywords to help AI systems identify topics in this answer."
+msgstr ""
+
+#: modules/AeoContent/AeoContent.php
+
+msgid "Comma-separated post/page IDs to exclude from the sitemap"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Comma-separated public CPTs. Leave empty to auto-include all public types (except attachment)."
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Comma-separated public post type slugs (e.g. post, page, product). Leave blank to use the toggles below."
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Comma-separated slugs (e.g. post, page, product)"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Common Crawl — often used for open datasets / model training."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Competing SEO plugins"
+msgstr ""
+
+#: modules/ConflictDetector/ConflictDetector.php
+
+msgid "Compress images and add loading=\"lazy\"."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Condition"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Configure all Pylon SEO features in one place"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Configure sections in Settings →"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Configured"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Connected Profiles"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Consecutive sentences start with \"%s\""
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Consecutive starts"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Consider reviewing and updating the content for freshness signals."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Contact page exists"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Content"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Content 300+ words"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Content Features"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Content Freshness"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/freshness/FreshnessEngine.php
+
+msgid "Content Freshness tracking"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Content aging"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Content analysis unavailable — no analyzable content found on this page. Add content to the editor or use a compatible page builder to enable analysis."
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Content gaps"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "Content has 1000+ words"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Content has 300+ words"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Content has 5+ headings (TOC-friendly)"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Content has H2 + H3 depth"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Content has images"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Content has lists or tables"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Content has video"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Content includes data/numbers"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Content includes multimedia"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Content is comprehensive (1500+ words)"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Content is fresh"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Content is not thin (< 300 words)"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Content lacks &lt;p&gt; tags."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Content length"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Content references entities/topics"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Content updated within 1 year"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Content uses lists or tables"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Control how your content appears when shared on social platforms — Facebook, Twitter, LinkedIn, and more."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Control which AI bots may crawl your site. Allow bots you want citing you in ChatGPT, Perplexity, Gemini, and Claude. These rules are appended to robots.txt automatically."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Controls Gemini / Google AI training use of your content (separate from Googlebot)."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Convert generated titles to Title Case (articles, conjunctions and short prepositions stay lowercase). Custom per-post titles are kept as-is."
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Cornerstone Content"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/meta/MetaEngine.php
+
+msgid "Cornerstone conflict"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Cornerstone only"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Could not create page."
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Could not fetch the page: %s"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Could not load data."
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Could not load this section. The module may be missing or disabled."
+msgstr ""
+
+#: modules/page-router/PageRouter.php
+
+msgid "Create a contact page to build trust with readers."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Create a unique, descriptive title rather than a generic list format."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Create an about page to establish credibility and authority."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Create and manage 301/302 redirects from the Pylon dashboard"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Create “Sitemap” page"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Credentials (e.g., PhD, MD)"
+msgstr ""
+
+#: modules/AuthorEaat/AuthorEaatEngine.php
+
+msgid "Critical"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Cron"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Current robots.txt (physical file)"
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Custom Intro"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Custom Notes / Footer"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Customize your SEO title to differentiate it from the post title."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "DOM"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Dashboard"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/page-router/PageRouter.php
+
+msgid "Data and citations present"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Database Size"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Date"
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Date in URL"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Days before a post is considered stale (30–730)"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Deep content (2500+ words)"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Default"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Default (Product)"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Default Priority"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Default priority for sitemap URLs (front page always gets 1.0)"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Defer or async non-critical scripts."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Delete"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Deleted"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Dense paragraphs"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Deprecated embeds"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Description is %d characters — may get truncated."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Description is %d characters."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Description is only %d characters."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Description length optimal"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Description too long"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Description too short"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Descriptive link text"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Detailed Audit Report"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Detected: %s."
+msgstr ""
+
+#: modules/Multilingual/MultilingualEngine.php
+
+msgid "Different"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Difficult"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Difficult readability"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Direct Answer"
+msgstr ""
+
+#: modules/AeoContent/AeoContent.php
+
+msgid "Disabled"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+#: modules/pulse/PulseDashboard.php
+#: modules/system-status/SystemStatus.php
+
+msgid "Disabled (noindex)"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Disallow"
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Display breadcrumb navigation with Schema.org markup."
+msgstr ""
+
+#: modules/schema/BreadcrumbWidget.php
+
+msgid "Display breadcrumbs on the front page"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Download CSV"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Download Export ZIP"
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Download all Pylon SEO data as a ZIP file containing:"
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Duplicate meta/schema risk — deactivate after migrating"
+msgstr ""
+
+#: modules/ConflictDetector/ConflictDetector.php
+
+msgid "Easy"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Edit"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Edit Per-Post SEO Meta"
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Edit sitemap page"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Email"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Empty CSV."
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Empty content"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Empty link anchors"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Empty or invalid CSV."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Enable AEO Analysis"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Enable Author Profiles"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Enable Breadcrumbs"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Enable Cornerstone Content"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Enable Freshness Scoring"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Enable HTML Sitemap shortcode"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Enable IndexNow"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Enable LLMs.txt"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Enable RSS Enhancements"
+msgstr ""
+
+#: modules/RssOptimizer/RssOptimizer.php
+
+msgid "Enable Redirect Manager"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Enable Schema Markup"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Enable XML Sitemap"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Enable compression"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Enable gzip/Brotli compression at the server level."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Enabled"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+#: modules/pulse/PulseDashboard.php
+#: modules/system-status/SystemStatus.php
+
+msgid "End Date"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Enhance your author authority signals with detailed bio, social links, and schema markup for Google E-E-A-T."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Ensure the publication date is visible for freshness signals."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Enter a focus keyword to optimize your content."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Enter the full URLs to your social media profiles. These will be used in Schema.org markup (sameAs) and Open Graph tags."
+msgstr ""
+
+#: modules/social/SocialLinks.php
+
+msgid "Error"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+#: modules/system-status/SystemStatus.php
+
+msgid "Error saving roles."
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Errors"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Event Details"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Exact"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Excellent"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Excessive nofollow may waste link equity; use dofollow for trusted sources."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Exclude Post IDs"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Exclude post IDs"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Expand the content to at least 300 words."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Expand the title to at least 50 characters for better relevance."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Expand to 120–160 characters."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Experience signals present"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Expert quotes and attributions"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Expertise signals present"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Export HTML"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Export Pylon Data"
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Export XML"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Export failed."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Exporting…"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "External links"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "External links present"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "External links to sources"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Extra post types"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Extractable Keywords"
+msgstr ""
+
+#: modules/AeoContent/AeoContent.php
+
+msgid "Extractable answer block"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "FAQ heading found"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Facebook"
+msgstr ""
+
+#: modules/social/SocialLinks.php
+
+msgid "Facebook, LinkedIn"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Failed"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Failed Checks"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Fair"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Fairly Difficult"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Fairly Easy"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Favicon present"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Featured image"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Fetching page and running 45+ SEO checks…"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Few external scripts"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Few internal links"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Few stylesheets"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Few subheadings"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "File upload failed."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Filename"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Fine-tune advanced behavior for power users including automatic redirects."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Finish"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "First-person perspective used"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Fix or remove placeholder links."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Flags posts that haven't been updated beyond the threshold"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Flesch Reading Ease"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Flesch: %1$s (%2$s) — Grade %3$s"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Flesch: %1$s (Grade %2$s, %3$s) — %4$d words, %5$d sentences, %6$.1f w/sent, %7$.2f syl/word"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Focus Keyword"
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+#: modules/meta/MetaEngine.php
+
+msgid "Focus keyword \"%s\" found in title."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Focus keyword \"%s\" missing from title."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Focus keyword found in meta description."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Focus keyword found in the H1: \"%s\"."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Focus keyword found in the URL slug."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Focus keyword found in the body text."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Focus keyword is set"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Focus keyword missing from body text."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Focus keyword missing from meta description."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Focus keyword missing from the H1 heading."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Focus keyword missing from the URL slug."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Focus keyword set"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "For competitive topics, aim for 2500+ words for deeper coverage."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Forbidden"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Found"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Found %d H1 tags — use only one."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Found %d time(s)"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Found: %s"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Frequent on-site terms without a dedicated focus keyword page"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "Freshness"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Friday"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "From Active Plugin"
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "From Exported File"
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Front-end preview"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Full site-wide SEO health report"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "GD / Imagick"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "GTIN"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "GTIN (Global Trade Item Number)"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "GTIN or MPN set"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Gallery images"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "General"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Generate XML sitemap"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Generated AEO question from focus keyword"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "Generated Schema Preview"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Generates a dynamic sitemap at /sitemap.xml"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Generating..."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/meta/MetaEngine.php
+#: modules/migrator/MigratorEngine.php
+
+msgid "Global title formatting and indexing rules for password-protected content."
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Good"
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+#: modules/bulk/BulkEditor.php
+#: modules/content/ContentAnalyzer.php
+#: modules/pulse/PulseDashboard.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Good 70-100"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Good Pages"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Good heading structure"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Good internal linking"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Good lexical diversity (> 60%)"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Good paragraph density"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Good readability"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Good sentence length variety"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Google Preview"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Google Search Console"
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Google Site Verification meta content value."
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Google product crawlers outside classic search."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "H1 → H3 without H2 subheadings."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "H1: %1$d, H2: %2$d, H3: %3$d — improve hierarchy."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "HTML Sitemap"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+#: modules/page-router/PageRouter.php
+
+msgid "HTML appended to each feed item."
+msgstr ""
+
+#: modules/RssOptimizer/RssOptimizer.php
+
+msgid "HTML is %s KB — very heavy."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "HTML is %s KB."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "HTML prepended to each feed item. Tip: use it to add a copyright line or link back to your site."
+msgstr ""
+
+#: modules/RssOptimizer/RssOptimizer.php
+
+msgid "Hard"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Has external links"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Has internal links"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Headers: source_url, target_url, type (301/302/307/308/410/451), match_type (exact/wildcard/regex). Existing sources skipped."
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Heading hierarchy correct"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Heading hierarchy is valid"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Heading level skipped"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Heading structure"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Headings"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Headings every ~300 words"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Headings follow a proper h1 → h2 structure."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Headings used"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Healthy"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Healthy external link profile"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Healthy keyword density"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Healthy text-to-code ratio"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Helps AI Overviews & PAA"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Helps rich results"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Highlight in editor"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Hits"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Home"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+#: modules/schema/SchemaEngine.php
+
+msgid "Home Text"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Home URL"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "How to choose %s"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "How to fix:"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "How-to intent for AI answer engines"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "Identify stale content and boost your site's relevance by keeping older posts up to date."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Ignore"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "Image"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Image SEO"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/image-seo/ImageSEO.php
+#: modules/page-router/PageRouter.php
+
+msgid "Image SEO Scanner"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Image alt text"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Images"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Images have dimensions"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Images missing alt text"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Images missing dimensions"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Images used"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Import"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/migrator/MigratorEngine.php
+#: modules/page-router/PageRouter.php
+
+msgid "Import & switch"
+msgstr ""
+
+#: modules/ConflictDetector/ConflictDetector.php
+
+msgid "Import / Export"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Import CSV"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Import SEO data from an active plugin or from an exported file (Yoast, Rank Math, AIOSEO, SEOPress, or generic CSV)."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Import complete! Migrated: %1$d meta entries, %2$d redirects, %3$d settings."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Import file is too large. Max allowed size: %s."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Import from Another SEO Plugin"
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Import from Other Plugins"
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Imported: %1$d, Skipped (already exist): %2$d"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Importing..."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "In stock"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Inactive Redirects"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Include Blog Posts"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Include Categories"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Include Pages"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Include categories"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Include hands-on experience, testing results, or personal anecdotes."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Include pages"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Include posts"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Include specific numbers and data points for depth."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Include statistics, data points, or cited sources for authority."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Include tags"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Include the focus keyword in the H1 heading naturally."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Include the keyword in the permalink slug."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Include your focus keyword near the start of the title."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Include your keyword in an H3 subheading if you use them."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Include your keyword in at least one H2 subheading."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Include your keyword in at least one H2/H3 subheading."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Include your keyword in the meta description."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Included Post Types"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Index rebuilt: %d posts processed."
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "IndexNow"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "IndexNow instant indexing"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Indexables"
+msgstr ""
+
+#: modules/page-router/PageRouter.php
+
+msgid "Indexables Summary"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Indexed Posts"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Indexing enabled"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Injects rel=\"alternate\" hreflang in &lt;head&gt; from your multilingual plugin or manual map."
+msgstr ""
+
+#: modules/Multilingual/MultilingualEngine.php
+
+msgid "Insecure HTTP"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Insert H2 subheadings between H1 and H3 headings."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Insert Link"
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Insert this internal link into the content?"
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Instagram"
+msgstr ""
+
+#: modules/social/SocialLinks.php
+
+msgid "Install an SSL certificate and force HTTPS."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Instantly notify search engines when you publish or update content — get indexed in seconds, not days."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Insufficient permissions."
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+
+msgid "Internal cross-linking to related topics"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Internal links"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Invalid JSON file."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Invalid Yoast export data."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Invalid nonce."
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+
+msgid "Invalid post."
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Invalid redirect ID."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Invalid request."
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Issues"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "JSON"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Job Title"
+msgstr ""
+
+#: modules/AuthorEaat/AuthorEaatEngine.php
+
+msgid "Keep a single H1 per page; demote extras to H2."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Keep paragraphs short. Aim for 3-4 sentences per paragraph."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keep paragraphs under 100 words for readability."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Keep paragraphs under 150 words for readability."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keep your SEO title between 30-60 characters for optimal SERP display."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keep your meta description between 120-160 characters."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Key terms defined"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Keyword / Question"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "Keyword Research"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+#: modules/page-router/PageRouter.php
+
+msgid "Keyword density"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keyword density is too high. Reduce keyword usage to avoid stuffing."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keyword density is too low. Aim for 0.5-2.5%."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keyword in H1 heading"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Keyword in H2 heading"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keyword in H3 heading"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keyword in SEO title"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+#: modules/meta/MetaEngine.php
+
+msgid "Keyword in URL"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Keyword in URL slug"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keyword in anchor text"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keyword in content"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+#: modules/meta/MetaEngine.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Keyword in content body"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keyword in description"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Keyword in first 100 words"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keyword in image alt text"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keyword in meta description"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+#: modules/meta/MetaEngine.php
+
+msgid "Keyword in subheadings"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keyword in title"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Keyword in use by %d cornerstone post(s)"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Keyword not in H1"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Keyword not in URL"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Keyword not in content"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Keyword not in description"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Keyword not in title"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Keyword not overused"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Keyword stuffing risk"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Keywords"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "LLMs.txt"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Language declared"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Large HTML"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Large page with many assets — ensure gzip/Brotli is enabled."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Last Seen"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Last indexed: %s"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Last scan: %s"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "Last updated: %s"
+msgstr ""
+
+#: modules/freshness/FreshnessEngine.php
+
+msgid "Latest Avg Score"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Latitude"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Lean HTML"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Leave closed days blank."
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Leave empty to use the WordPress default. AI crawler rules (above) are appended when enabled."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Leave empty to use the default term URL."
+msgstr ""
+
+#: modules/taxonomy-seo/TaxonomySEO.php
+
+msgid "Legacy Anthropic user-agent."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Length"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Likely citeable"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Link Assistant"
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+#: modules/page-router/PageRouter.php
+
+msgid "Link ignored."
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "Link inserted and content updated."
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Link to authoritative external sources for credibility."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Link to authoritative sources to build trust."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Link to related content to build topical authority."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "LinkedIn"
+msgstr ""
+
+#: modules/social/SocialLinks.php
+
+msgid "Links"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+#: modules/page-router/PageRouter.php
+
+msgid "Lists and bullet points used"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Live Preview"
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Loaded"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Loading history…"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Loading…"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Local SEO"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+#: modules/page-router/PageRouter.php
+
+msgid "Local SEO Settings"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Logo / Image URL"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Logs 404 errors so you can fix broken links quickly"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Long paragraphs"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Longer content (1000+ words) tends to rank better."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Longitude"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Low filler word usage (< 1.5%)"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Low keyword usage"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Low text-to-code ratio"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "MPN"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "MPN (Manufacturer Part Number)"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Maintain a mix of internal and external links."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Maintain proper heading order: H2 before H3, H3 before H4."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Manage Redirects"
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Manage SEO Settings"
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Manage Schema Markup"
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Manage URL redirects and monitor 404 errors to preserve link equity and improve user experience."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Manage redirects and monitor 404 errors."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Manage social links"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Manual hreflang map (optional)"
+msgstr ""
+
+#: modules/Multilingual/MultilingualEngine.php
+
+msgid "Many images"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Many inline styles"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Many scripts"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Many stylesheets"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Mark this as a pillar article. Pylon will warn when other posts target the same keyword to prevent cannibalization."
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Mark your most important articles as cornerstone content. Pylon will flag when other posts target the same keywords, helping you avoid cannibalization."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Marks title and lead paragraphs for voice assistants and AI extraction (SpeakableSpecification)"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Match"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Max 160 chars for snippet"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Max Execution Time"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Max Input Vars"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Max Links"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Max URLs per sitemap file (100–50000)"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Maximum number of content links listed (10–500). Full file uses at least 100."
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Media"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Media library alt text &amp; filename audit"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Memory Limit"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Memory Limit (WP)"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Mention your keyword early in the content for SEO relevance."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Mentions this topic"
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Meta & Social"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Meta AI external content agent."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Meta Description"
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+#: modules/meta/MetaEngine.php
+#: modules/taxonomy-seo/TaxonomySEO.php
+
+msgid "Meta description length"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Meta description missing"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Meta description present"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Meta robots configured"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Minify HTML, remove unused code, lazy-load content."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Minimal inline styles"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Missing"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+#: modules/pulse/PulseDashboard.php
+#: modules/system-status/SystemStatus.php
+
+msgid "Missing Alt Text"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Missing OG description"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Missing OG title"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Missing SEO title"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Missing canonical URL"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Missing fields."
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+
+msgid "Missing focus keyword"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Missing meta description"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Missing mobile viewport meta tag."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Missing post ID."
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+
+msgid "Missing share image"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Mix short and long sentences for better rhythm."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Mixed external link quality"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Mobile-friendly viewport"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Moderate readability"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Modified"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Module Not Available"
+msgstr ""
+
+#: modules/page-router/PageRouter.php
+
+msgid "Modules Loaded"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Monday"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Most Common Issues"
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+
+msgid "Mostly nofollow external links"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Move inline styles to CSS classes."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Multilingual / Hreflang"
+msgstr ""
+
+#: modules/Multilingual/MultilingualEngine.php
+
+msgid "Multiple H1 headings"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Multiple subheadings (3+ H2s)"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Multisite"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "MySQL Version"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "N/A"
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+#: modules/meta/MetaEngine.php
+
+msgid "Naturally include your keyword in the description."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Naturally use your keyword in the content."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Needs work"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Never scanned"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "Next"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "No"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "No \"#\" placeholder links."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No &lt;title&gt; tag detected on the page."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No 4+ sentences start with same word"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "No 404 errors recorded."
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "No Flash/object embeds detected."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No Follow"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "No H1 heading"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No H2 subheadings detected."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No Index"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "No JSON-LD schema markup detected."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No Twitter card"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No audit issues recorded yet."
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+
+msgid "No broken links found!"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "No cached audit found. Run an audit first."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No cached data. Run a pulse scan first."
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "No canonical URL"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No canonical link tag found."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No content issues found. Great work!"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "No data yet."
+msgstr ""
+
+#: core/class-chart-renderer.php
+#: modules/pulse/PulseDashboard.php
+
+msgid "No deprecated media"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No empty anchors"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No external links"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No favicon"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No favicon detected."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No generic intro phrases"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "No headings found"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No history yet."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No image"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "No image specified."
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "No images"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No images match this filter."
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "No insights yet. Publish content, then Refresh."
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "No internal links"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No lang attribute on &lt;html&gt;."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No language attribute"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No major compression red flags."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No major issues found — your site looks healthy!"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "No meta description tag detected."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No noindex directive found."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No og:description meta tag."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No og:image — shares will look plain."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No og:title meta tag."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No overly long paragraphs"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "No overly long paragraphs."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No paragraph tags"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No placeholder links"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No post specified."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No published URLs found. Publish pages/posts or enable sections under Settings → HTML Sitemap."
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "No readable text content found."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No redirects yet."
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "No repeated sentences"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "No results returned."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No sentence exceeds 40 words"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "No sitemap data."
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "No sitemap items found yet."
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "No structured data"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No subheadings"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No suggestions available."
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "No supported SEO plugins detected on this site."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "No twitter:card meta tag."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "No usage recorded"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "No valid fields to save."
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+
+msgid "No viewport tag"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Nofollow this archive"
+msgstr ""
+
+#: modules/taxonomy-seo/TaxonomySEO.php
+
+msgid "Nofollow — do not follow links on this archive"
+msgstr ""
+
+#: modules/taxonomy-seo/TaxonomySEO.php
+
+msgid "Noindex Password-Protected Pages"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Noindex not set"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Noindex this archive"
+msgstr ""
+
+#: modules/taxonomy-seo/TaxonomySEO.php
+
+msgid "Noindex — hide this archive from search results"
+msgstr ""
+
+#: modules/taxonomy-seo/TaxonomySEO.php
+
+msgid "Non-cornerstone only"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "None detected"
+msgstr ""
+
+#: modules/ConflictDetector/ConflictDetector.php
+
+msgid "Norton Safe Web"
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Norton Safe Web site verification code."
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Not available"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Not cached (will generate on first visit)"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Not found"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Not set"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+#: modules/system-status/SystemStatus.php
+
+msgid "Notes"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Numbers in titles increase click-through rates."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Numeric slug"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "OG Description"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "OG Image URL"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "OG Title"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "OG image is set"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "OK"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "OK alongside Pylon if you disable Pylon redirects"
+msgstr ""
+
+#: modules/ConflictDetector/ConflictDetector.php
+
+msgid "OPcache"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Ok"
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+#: modules/bulk/BulkEditor.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Ok 40-69"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Okay"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "On-site content gaps"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "Once Monthly"
+msgstr ""
+
+#: core/class-bootstrap.php
+
+msgid "Once Weekly"
+msgstr ""
+
+#: core/class-bootstrap.php
+
+msgid "One URL per line for any other social platforms (TikTok, Snapchat, WhatsApp, Telegram, etc.)"
+msgstr ""
+
+#: modules/social/SocialLinks.php
+
+msgid "One URL per line. Used for schema.org sameAs property."
+msgstr ""
+
+#: modules/AuthorEaat/AuthorEaatEngine.php
+
+msgid "One per line: lang|url  — used when no multilingual plugin is active, or as extras."
+msgstr ""
+
+#: modules/Multilingual/MultilingualEngine.php
+
+msgid "One-line description shown to AI engines. Leave blank to use the site tagline."
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Only %.1f%% text content."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Only %.1f%% text vs code."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Only %1$d H2 subheadings for %2$d words."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Only %d internal links."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Only %d words. Aim for 300+."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Only one H1 tag"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Open /robots.txt"
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Open /sitemap.xml"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Open Graph (Facebook / LinkedIn)"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Open Graph Tags"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Open Graph description set"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Open Graph tags present"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Open Graph title set"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Open Sitemap →"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "OpenAI search indexing bot."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Opening Hours"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Optimize your content for AI Overviews and AI Mode. Pylon scores how likely your content is to be cited by Google AI, ChatGPT, and other LLMs."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Optional markdown/plain text inserted after the summary (policies, contact, how to cite you)."
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Original content structure"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Output hreflang tags"
+msgstr ""
+
+#: modules/Multilingual/MultilingualEngine.php
+
+msgid "Outputs BreadcrumbList schema markup and enables shortcode/template tag"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Override the default archive page title for this term."
+msgstr ""
+
+#: modules/taxonomy-seo/TaxonomySEO.php
+
+msgid "Oversized"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Oversized (>500KB)"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Overview"
+msgstr ""
+
+#: modules/page-router/PageRouter.php
+
+msgid "PHP Version"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Page"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Page blocked from indexing"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Page is indexable"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Page is served over HTTP, not HTTPS."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Page is served over HTTPS."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Page payload is reasonable"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Page returned HTTP %d. Make sure the page is published and publicly accessible."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Pages"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Pages Analyzed"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Pages Needing Attention"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Paragraph too long (%d words)"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Paragraphs are not too long"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Passed"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+#: modules/seo-audit/SeoAuditor.php
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Passive voice"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Passive voice < 10%"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Passive voice detected"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Per page:"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Perplexity AI search crawler."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Person Details"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Person schema uses the post title as the person name and the excerpt as the description."
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Phone"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Pings Bing, Yandex, and other IndexNow-compatible search engines on content changes"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Pinterest"
+msgstr ""
+
+#: modules/social/SocialLinks.php
+#: modules/Verification/VerificationEngine.php
+
+msgid "Pinterest site verification code."
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Placeholder links"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Please select a page or enter a URL."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Plugin"
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Policy"
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Poor"
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+#: modules/bulk/BulkEditor.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Poor 0-39"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Poor Pages"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Poor image filenames"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Post"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Post Max Size"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Post Types"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Post Types to include"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Post date is displayed"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Post not found."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Post types:"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Posts"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Prevent duplicate content issues by automatically setting canonical URLs across your site."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Previous"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Price is set"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Privacy policy exists"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Processing file..."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Product"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Product Data"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Product Details"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Product Group (Variant)"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Product description"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Products"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Publish & export"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Publish a human-readable sitemap for users and crawlers. Use shortcode [pylon_html_sitemap] or create a page from Tools → HTML Sitemap."
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Publish a machine-readable /llms.txt so AI engines (Google AI, ChatGPT, Perplexity) can discover your site."
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Published Pages"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/analytics/AnalyticsOverview.php
+
+msgid "Published within 6 months"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Pylon Breadcrumbs"
+msgstr ""
+
+#: modules/schema/BreadcrumbWidget.php
+
+msgid "Pylon E-E-A-T Author Profile"
+msgstr ""
+
+#: modules/AuthorEaat/AuthorEaatEngine.php
+
+msgid "Pylon IndexNow: Unable to create key file. Please ensure your WordPress root directory is writable."
+msgstr ""
+
+#: modules/indexnow/IndexNowEngine.php
+
+msgid "Pylon Plugin"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Pylon SEO"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/meta/MetaEngine.php
+#: modules/taxonomy-seo/TaxonomySEO.php
+
+msgid "Pylon SEO Dashboard"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Pylon SEO detected other SEO plugins that may duplicate titles, schema, or sitemaps: %s. Deactivate them or use Pylon Migrator, then keep a single SEO engine."
+msgstr ""
+
+#: modules/ConflictDetector/ConflictDetector.php
+
+msgid "Pylon SEO → Audit → Local SEO"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Pylon WooCommerce SEO"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Pylon generates a clean XML sitemap to help search engines discover your content."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Pylon requires PHP %1$s or higher. Your site is running PHP %2$s."
+msgstr ""
+
+#: pylon.php
+
+msgid "Question-answer format used"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Question-style H2"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Quick Actions"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Quotes or references included"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "RSS Optimization"
+msgstr ""
+
+#: modules/RssOptimizer/RssOptimizer.php
+
+msgid "Readability"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Readable paragraphs"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Reasonable image count"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Rebuild Index"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Rebuilding..."
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Recent 404 Errors"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Recent Published Content"
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Recently published content tends to rank better."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Recommended: 50–160 words. This will be used for schema.org \"text\" property and AI-optimized meta description."
+msgstr ""
+
+#: modules/AeoContent/AeoContent.php
+
+msgid "Redirect"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Redirect Attachments to Parent"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Redirect added."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Redirect deleted."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Redirect tables not found."
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Redirects"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/analytics/AnalyticsOverview.php
+#: modules/page-router/PageRouter.php
+#: modules/redirects/RedirectEngine.php
+
+msgid "Redirects & 404s"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/Onboarding/OnboardingWizard.php
+#: modules/pulse/PulseDashboard.php
+
+msgid "Redirects and 404 monitoring keep your site healthy"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Reduce HTML bloat; increase real content."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Reduce filler words (very, really, actually, basically) for sharper writing."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Reduce inline styles/scripts and unused markup."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Reduce keyword frequency; use synonyms and related terms."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Reduce keyword stuffing. Use synonyms or related terms instead."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Reference specific entities, brands, places, or concepts for depth."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Reference studies, research, or expert sources to demonstrate expertise."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Refresh insights"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "Regex"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Related to focus keyword"
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Related:"
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Related: %s"
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Remove"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Remove common stop words from your URL slug."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Remove date-based URL structure; use a numeric-less slug instead."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Remove duplicate sentences to improve originality."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Remove noindex if you want this page in search results."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Remove unused scripts; defer the rest."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Rename images using descriptive, hyphen-separated filenames (e.g. blue-widget.jpg)."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Replace Flash/object embeds with HTML5."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Replace placeholder links with real URLs."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Replace underscores with hyphens in the slug."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Report downloaded."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Review and add internal links to improve SEO structure."
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Rewrite or substantially update the content to improve freshness signals."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Rewrite passive sentences in active voice for clearer writing."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Rich"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Rich Snippet Type"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Rich previews on Facebook, LinkedIn, WhatsApp, and other platforms"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Rich previews with image and description on X/Twitter"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Robots"
+msgstr ""
+
+#: modules/taxonomy-seo/TaxonomySEO.php
+
+msgid "Robots Meta"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Robots.txt"
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Robots.txt Content"
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Robots.txt Editor"
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Robots.txt settings saved."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Role"
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Role Capabilities"
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Roles saved."
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Run Audit"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Run SEO Audits"
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Run a few audits to start building your score trend."
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+
+msgid "Run audits over time to see trends."
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Run more audits to build score history."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "SAPI"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "SEO"
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+#: modules/indexables/IndexablesEngine.php
+
+msgid "SEO Audit"
+msgstr ""
+
+#: modules/page-router/PageRouter.php
+
+msgid "SEO Auditor"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "SEO Capabilities per Role"
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "SEO Conflicts"
+msgstr ""
+
+#: modules/ConflictDetector/ConflictDetector.php
+
+msgid "SEO Health Pulse"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "SEO Indexables"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "SEO Pulse"
+msgstr ""
+
+#: modules/page-router/PageRouter.php
+
+msgid "SEO Score: %d/100"
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+
+msgid "SEO Title"
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+#: modules/meta/MetaEngine.php
+#: modules/taxonomy-seo/TaxonomySEO.php
+
+msgid "SEO title differs from post title"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "SEO title length"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "SEO-friendly image filenames"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "SKU is set"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Same as post title"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Saturday"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Save"
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+
+msgid "Save Robots.txt"
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Save Role Capabilities"
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Save Settings"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/LocalSeo/LocalSEO.php
+#: modules/social/SocialLinks.php
+
+msgid "Save the post first."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Saved AEO keyword — expand into FAQ / Speakable block"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "Scan Now"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "Scan complete."
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "Scan cursor: post #%d"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "Scan expired or invalid. Please try again."
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Scan failed. Try again."
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Scanning all pages…"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Scanning media library…"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Scanning…"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Schema Markup"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Schema Markup (Structured Data)"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Schema Type"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+#: modules/schema/SchemaEngine.php
+
+msgid "Schema is output in the"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Schema markup helps search engines understand your content"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Schema supports AI citation"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Schema type selected"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Score"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+#: modules/pulse/PulseDashboard.php
+
+msgid "Score Distribution"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Score History"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Search"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Search title or ID..."
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Search: %s"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Section"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Sections"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Secure HTTPS connection"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Security check failed."
+msgstr ""
+
+#: modules/citeability/CiteabilityEngine.php
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Select"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Select a page above and click \"Run Audit\" to see a detailed SEO report."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Select a schema type to enable structured data."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Select any published page or post and run a full SEO audit with 40+ checks across 6 categories."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Select which post types to include in the sitemap."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Sentence length"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Sentence too long (%d words)"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Separator"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Server"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Server OS"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Server error."
+msgstr ""
+
+#: modules/roles/RoleManager.php
+
+msgid "Serves /llms.txt and /llms-full.txt from your site root. Disable to stop serving them."
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Set"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Set Open Graph tags for better social media sharing."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Set Twitter card tags for X/Twitter sharing."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Set a canonical URL to prevent duplicate content issues."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Settings"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Settings saved."
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Setup Complete!"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Setup Wizard"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Short Bio"
+msgstr ""
+
+#: modules/AuthorEaat/AuthorEaatEngine.php
+
+msgid "Short description"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Short paragraphs"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Shortcode for a public page, or download a full HTML / XML file. Live XML sitemap stays at /sitemap.xml."
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Shorten sentences and use simpler words."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Shorten the URL slug."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Shorten the title to 50–60 characters."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Shorter URLs are better for SEO and sharing."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Show breadcrumb navigation on your site for better UX and SEO. Use the [pylon_breadcrumb] shortcode or pylon_breadcrumb() template tag."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Show breadcrumbs on the front-end without a shortcode (uses wp_body_open or post content)"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Show on Homepage"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Showing"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Showing %1$d of %2$d indexed posts (%3$d per page)"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Shown in catalog"
+msgstr ""
+
+#: modules/woocommerce/WooCommerceSEO.php
+
+msgid "Simplify sentences and vocabulary."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Simplify your language. Use shorter words and sentences. Current grade level: %s"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Single H1 heading"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Site Audit Overview"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Site Summary"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Site URL"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Site Verification"
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Site uses HTTPS"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Site-wide SEO health snapshot"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Sitemap"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Sitemap Pages"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Sitemap Status"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Sitemap page ready. <a href=\"%1$s\">Edit page</a> · <a href=\"%2$s\" target=\"_blank\" rel=\"noopener\">View</a>"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Size"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Skip setup"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Slug \"%s\" starts with a number or is purely numeric."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Slug: %s — no dates or numeric IDs."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Social"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Social & Schema"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Social Links"
+msgstr ""
+
+#: modules/page-router/PageRouter.php
+#: modules/social/SocialLinks.php
+
+msgid "Social Media Profiles"
+msgstr ""
+
+#: modules/social/SocialLinks.php
+
+msgid "Social Meta"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Social Meta & Schema"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Social Preview"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Social Profiles (SameAs)"
+msgstr ""
+
+#: modules/AuthorEaat/AuthorEaatEngine.php
+
+msgid "Social meta tags are added to your pages"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Social meta tags help your content look great when shared. Schema markup helps search engines understand your content."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Social share image set"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Source"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Source URL"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Source and target are required."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Space subheadings evenly for better scannability."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Sparse heading structure"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Speakable Schema"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Split very long sentences to improve readability."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Stale Pages"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Stale Threshold"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Stale content"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Standard"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Start Date"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "State / Region"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Statistics and data cited"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Status"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+#: modules/image-seo/ImageSEO.php
+#: modules/migrator/MigratorEngine.php
+
+msgid "Step-by-step instructions present"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Stop words found"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Street Address"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Structured data for rich snippets and AI Overviews."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Structured data present"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Subheadings distributed evenly"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Sufficient content"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Suggest"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Suggest Links"
+msgstr ""
+
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Summary"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Sunday"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Switch to HTTPS for trust and security signals."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "System Status"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Tags"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Target"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Target Question"
+msgstr ""
+
+#: modules/AeoContent/AeoContent.php
+
+msgid "Target URL"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Test title and description variants for better CTR."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Text for the home link in breadcrumbs"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Thank you for installing Pylon — the all-in-one SEO plugin for WordPress. Let us help you get set up in just a few steps."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "The page contains no images."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "The page has no &lt;h1&gt; tag."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "The page has no heading tags at all."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "The page has no outbound links."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "The page links to no other pages on your site."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "The question this content answers. Used in FAQ schema and AI extraction."
+msgstr ""
+
+#: modules/AeoContent/AeoContent.php
+
+msgid "Thin content"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "This page is no longer available."
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "This page is unavailable for legal reasons."
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "This quick setup will walk you through the essentials. You can change everything later in Settings."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Thursday"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Title"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+#: modules/LinkAssistant/LinkAssistant.php
+
+msgid "Title contains a number"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Title contains brackets or parentheses"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Title has power words"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Title is %d characters — may get truncated in search results."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Title is %d characters."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Title is not overly generic"
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Title is only %d characters."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Title length"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Title length optimal"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Title tag missing"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Title tag present"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Title tags, meta descriptions, Open Graph & Twitter Cards."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Title too long"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Title too short"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Title:"
+msgstr ""
+
+#: modules/schema/BreadcrumbWidget.php
+
+msgid "Titles & Crawl Rules"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Too many scripts"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Tools"
+msgstr ""
+
+#: modules/page-router/PageRouter.php
+
+msgid "Top Issues Across All Pages"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Topic clusters"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "Topics"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Topics of Expertise (comma separated)"
+msgstr ""
+
+#: modules/AuthorEaat/AuthorEaatEngine.php
+
+msgid "Total 404s"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Total Audits"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Total Checks"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Total Images"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "Total URLs Indexed"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "Total Words"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Track audit scores over time"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Transition words"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "Transition words >= 30%"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Trim to under 160 characters."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Tuesday"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Twitter / X"
+msgstr ""
+
+#: modules/social/SocialLinks.php
+
+msgid "Twitter Cards"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Twitter Description"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Twitter Image URL"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Twitter Title"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Twitter card configured"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Twitter card tags present"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Type"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+#: modules/LinkAssistant/LinkAssistant.php
+#: modules/redirects/RedirectEngine.php
+
+msgid "Type keyword and press Enter"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "URL"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+#: modules/redirects/RedirectEngine.php
+
+msgid "URL contains date segments (e.g. /2024/.../) which can hurt evergreen rankings."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "URL length is fine"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "URL list"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "URL slug <= 75 characters"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "URL slug has no stop words"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "URL slug uses hyphens, not underscores."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "URL to a professional author photo/headshot."
+msgstr ""
+
+#: modules/AuthorEaat/AuthorEaatEngine.php
+
+msgid "URL too long"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "URL uses hyphens"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "URL uses underscores"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "URLs Per Sitemap Page"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "URLs in sitemap"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Unable to retrieve page content."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Unauthorized."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/broken-link/BrokenLinkChecker.php
+#: modules/citeability/CiteabilityEngine.php
+#: modules/image-seo/ImageSEO.php
+#: modules/indexables/IndexablesEngine.php
+#: modules/LinkAssistant/LinkAssistant.php
+#: modules/migrator/MigratorEngine.php
+#: modules/Onboarding/OnboardingWizard.php
+#: modules/pulse/PulseDashboard.php
+#: modules/redirects/RedirectEngine.php
+#: modules/roles/RoleManager.php
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Underscores in URLs are not word separators to Google."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Unknown"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Unlike volume-only keyword DBs, Pylon ranks opportunities from your on-site coverage gaps and AEO-ready questions."
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "Unsupported file format. Use .zip, .csv, or .json."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Unsupported plugin."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Update old content to maintain freshness and relevance."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Updated %d days ago."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Upload & Import"
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Upload Max Size"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Upload an SEO export file. Supported formats:"
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "Upload failed."
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "Usage Stats"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Usage Summary"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Use FAQPage, HowTo, or Article schema"
+msgstr ""
+
+#: modules/aeo/AEOEngine.php
+
+msgid "Use H3 subheadings under H2s for detailed topic coverage."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Use a descriptive, keyword-rich slug without numeric prefixes."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Use bullet points or tables to make content scannable."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Use descriptive anchor text (avoid \"click here\" or \"read more\")."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Use exactly one H1 heading per page."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Use first-person language to share personal experience."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Use headings in descending order without skipping levels."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Use keyword in body text"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "Use lists and tables to present structured information."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Use multiple H2 subheadings to organize content comprehensively."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Use nofollow sparingly — only for untrusted or paid links."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Use the keyword a few more times naturally."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Use unique formatting (lists, tables, video) to differentiate."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Use varied vocabulary to demonstrate depth and originality."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Use your keyword at least 2-3 times naturally in the content."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Use your keyword in the anchor text of at least one link."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Used by ChatGPT browsing and training-related crawls."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Used when Post Types is empty. Always included in /llms-full.txt."
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "Used when Post Types is empty. Lists recent posts in the Blog section."
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "User-initiated ChatGPT fetches of your pages."
+msgstr ""
+
+#: modules/RobotsTxt/RobotsTxtEngine.php
+
+msgid "Vary your sentence openings. Avoid starting multiple sentences with the same word."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Venue"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "Verify your site with search engines and webmaster tools. Paste the content value from each verification tag."
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Version"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Very Difficult"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Very Easy"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Very low text ratio"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Very short paragraphs"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "View All"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "View Full Report →"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "View Full Reports"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "View System Status"
+msgstr ""
+
+#: modules/ConflictDetector/ConflictDetector.php
+
+msgid "View page"
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "View stale posts"
+msgstr ""
+
+#: modules/freshness/FreshnessEngine.php
+
+msgid "Viewport meta tag is set."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "WP Debug"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Warning"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Warnings"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+#: modules/system-status/SystemStatus.php
+
+msgid "Weak link anchor text"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Wednesday"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "Welcome"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Welcome to Pylon!"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "What is %s?"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "When off, the shortcode renders nothing."
+msgstr ""
+
+#: modules/HtmlSitemap/HtmlSitemap.php
+
+msgid "Where to place auto-inserted breadcrumbs. Auto tries the theme body hook, then falls back to content."
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Why"
+msgstr ""
+
+#: modules/KeywordResearch/KeywordResearch.php
+
+msgid "Wildcard"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "With Alt Text"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "With alt text"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "WordPress"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "Words"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "Workflow Rules"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Workflows"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "Wrap text in paragraph tags for readability and SEO."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "Write a concise, direct answer below. This content is optimized for AI crawlers (ChatGPT, Perplexity, Gemini, Claude) and Google AI Overviews to extract as a featured answer. Keep it under 160 words, start with a direct statement, and avoid fluff."
+msgstr ""
+
+#: modules/AeoContent/AeoContent.php
+
+msgid "Write a detailed author bio to establish expertise."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "Write a direct, concise answer to the target question. Start with the most important information."
+msgstr ""
+
+#: modules/AeoContent/AeoContent.php
+
+msgid "Write at least 300 words for adequate content depth."
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "Write at least 300 words to avoid thin content penalties."
+msgstr ""
+
+#: modules/content/AdvancedAnalysisEngine.php
+
+msgid "XML Sitemap"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "XML Sitemap Health"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "XML Sitemap is generated automatically"
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "Yandex Webmaster"
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Yandex Webmaster verification code."
+msgstr ""
+
+#: modules/Verification/VerificationEngine.php
+
+msgid "Yes"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "You can change any of these settings later from the Pylon Settings page."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "YouTube"
+msgstr ""
+
+#: modules/social/SocialLinks.php
+
+msgid "Your site is configured with the essential SEO settings. All features work locally on your server — no external services or accounts required."
+msgstr ""
+
+#: modules/Onboarding/OnboardingWizard.php
+
+msgid "ZIP / Postal Code"
+msgstr ""
+
+#: modules/LocalSeo/LocalSEO.php
+
+msgid "ZIP does not contain settings.json (Yoast export format)."
+msgstr ""
+
+#: modules/migrator/MigratorEngine.php
+
+msgid "across all audits"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "active"
+msgstr ""
+
+#: modules/admin/AdminEngine.php
+
+msgid "active rules"
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+
+msgid "ago"
+msgstr ""
+
+#: modules/freshness/FreshnessEngine.php
+#: modules/indexables/IndexablesEngine.php
+
+msgid "average across audits"
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+
+msgid "broken links"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "cURL"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "content issues found"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "e.g. 12345678901234"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "e.g. 2025-06-15T09:00"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "e.g. 2025-06-15T17:00"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "e.g. A compelling description…"
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+
+msgid "e.g. MPN12345"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "e.g. Madison Square Garden"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "e.g. My Custom SEO Title"
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+
+msgid "e.g. Nike"
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "e.g. Preferred citation: Brand Name. Contact: hello@example.com"
+msgstr ""
+
+#: modules/llms-txt/LlmsTxtEngine.php
+
+msgid "e.g. What is the best WordPress SEO plugin?"
+msgstr ""
+
+#: modules/AeoContent/AeoContent.php
+
+msgid "e.g. blue widgets"
+msgstr ""
+
+#: modules/bulk/BulkEditor.php
+
+msgid "e.g. en or en-US. Leave empty to use your site language."
+msgstr ""
+
+#: modules/Multilingual/MultilingualEngine.php
+
+msgid "filename"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "from recent audits"
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+
+msgid "good"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "html lang=\"%s\"."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "in media library"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "index"
+msgstr ""
+
+#: modules/content/SeoCheckerEngine.php
+
+msgid "keyword1, keyword2, keyword3"
+msgstr ""
+
+#: modules/AeoContent/AeoContent.php
+
+msgid "logged 404s"
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+
+msgid "mbstring"
+msgstr ""
+
+#: modules/system-status/SystemStatus.php
+
+msgid "need work"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "needs work"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "no alt"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "no title"
+msgstr ""
+
+#: modules/indexables/IndexablesEngine.php
+
+msgid "of"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "of total"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+#: modules/pulse/PulseDashboard.php
+
+msgid "og:description is present."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "og:image is present."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "oversized"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "passed"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "poor"
+msgstr ""
+
+#: modules/image-seo/ImageSEO.php
+
+msgid "posts & pages"
+msgstr ""
+
+#: modules/analytics/AnalyticsOverview.php
+
+msgid "published posts & pages"
+msgstr ""
+
+#: modules/pulse/PulseDashboard.php
+
+msgid "robots meta tag contains \"noindex\"."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "shown"
+msgstr ""
+
+#: modules/broken-link/BrokenLinkChecker.php
+
+msgid "source_url, target_url, type"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "total"
+msgstr ""
+
+#: modules/redirects/RedirectEngine.php
+
+msgid "twitter:card = %s."
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "via wp_head. Enable/disable in Settings → Schema."
+msgstr ""
+
+#: modules/schema/SchemaEngine.php
+
+msgid "x-default language code"
+msgstr ""
+
+#: modules/Multilingual/MultilingualEngine.php
+
+msgid "—"
+msgstr ""
+
+#: core/class-chart-renderer.php
+
+msgid "— Select a page or post —"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "…or enter any URL"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "≤60 search, ≤70 SEO"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+
+msgid "≥2 mentions"
+msgstr ""
+
+#: modules/content/ContentAnalyzer.php
+
+msgid "⬇ Export CSV"
+msgstr ""
+
+#: modules/seo-audit/SeoAuditor.php
+
+msgid "🔍"
+msgstr ""
+
+#: modules/meta/MetaEngine.php
+

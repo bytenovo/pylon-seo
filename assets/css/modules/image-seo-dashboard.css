@@ -1,0 +1,7 @@
+        #pylon-img-dash-card { border-radius:12px;overflow:hidden; }
+        #pylon-img-dash-card .dash-stat { background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 10px;text-align:center; }
+        #pylon-img-dash-card .dash-stat-val { font-size:22px;font-weight:700;line-height:1.2; }
+        #pylon-img-dash-card .dash-stat-lab { font-size:10px;color:#64748b;margin-top:3px; }
+        #pylon-img-dash-card .dash-stat-sub { font-size:9px;color:#94a3b8;margin-top:1px; }
+        #pylon-img-dash-card .dash-bar-bg { flex:1;height:24px;background:#f1f5f9;border-radius:12px;overflow:hidden;display:flex; }
+        #pylon-img-dash-card .dash-bar-fill { height:100%;transition:width 0.6s ease;border-radius:12px; }

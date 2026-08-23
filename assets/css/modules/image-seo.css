@@ -1,0 +1,25 @@
+        .img-spinner { display:inline-block;width:34px;height:34px;border:3px solid #e2e8f0;border-top-color:#6366f1;border-radius:50%;animation:img-spin 0.6s linear infinite; }
+        @keyframes img-spin { to { transform:rotate(360deg); } }
+        .img-table-wrap { overflow-x:auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px; }
+        #pylon-img-table { border:0;margin:0; }
+        #pylon-img-table th { padding:12px 14px;font-size:11px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid #e2e8f0;background:#f8fafc; }
+        #pylon-img-table td { padding:10px 14px;border-bottom:1px solid #f1f5f9;vertical-align:middle; }
+        #pylon-img-table tr:last-child td { border-bottom:0; }
+        #pylon-img-table tbody tr:hover td { background:#f8fafc; }
+        .img-thumb { width:56px !important;height:56px !important;min-width:56px !important;max-width:56px !important;min-height:56px !important;max-height:56px !important;object-fit:cover !important;border-radius:8px;display:block;border:1px solid #e2e8f0;background:#f8fafc; }
+        .img-status-dot { display:inline-block;width:8px;height:8px;border-radius:50%; }
+        .img-status-dot.good { background:#22c55e; }
+        .img-status-dot.warn { background:#f59e0b; }
+        .img-status-dot.bad  { background:#ef4444; }
+        .img-alt-input { width:100%;padding:6px 10px;border:1px solid #e2e8f0;border-radius:6px;font-size:12px;line-height:1.6;transition:border-color 0.2s,box-shadow 0.2s; }
+        .img-alt-input:focus { border-color:#6366f1;box-shadow:0 0 0 2px rgba(99,102,241,0.15);outline:0; }
+        .img-alt-input.img-alt-missing { border-color:#ef4444;background:#fef2f2; }
+        .img-alt-input.img-alt-missing:focus { border-color:#ef4444;box-shadow:0 0 0 2px rgba(239,68,68,0.15); }
+        .img-badge { display:inline-block;padding:3px 8px;border-radius:4px;font-size:10px;font-weight:600;margin:1px;white-space:nowrap; }
+        .img-badge.alt-missing { background:#fee2e2;color:#b91c1c; }
+        .img-badge.name-bad { background:#fef3c7;color:#92400e; }
+        .img-badge.size-large { background:#dbeafe;color:#1e40af; }
+        .img-summary-card { background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:18px 14px;text-align:center; }
+        .img-summary-val { font-size:28px;font-weight:700;line-height:1.2; }
+        .img-summary-lab { font-size:11px;color:#64748b;margin-top:4px;font-weight:500; }
+        .img-summary-sub { font-size:10px;color:#94a3b8;margin-top:2px; }

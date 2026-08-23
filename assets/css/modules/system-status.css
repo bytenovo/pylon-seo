@@ -1,0 +1,8 @@
+        .pylon-info-table { width:100%;border-collapse:collapse;font-size:13px }
+        .pylon-info-table tr { border-bottom:1px solid var(--pylon-gray-100) }
+        .pylon-info-table tr:last-child { border-bottom:0 }
+        .pylon-info-table td { padding:12px 0;vertical-align:middle }
+        .pylon-info-label { width:220px;color:var(--pylon-gray-500);font-weight:500;white-space:nowrap;font-size:13px }
+        .pylon-info-value { color:var(--pylon-gray-700);display:flex;align-items:center;gap:8px;flex-wrap:wrap }
+        .pylon-info-value code { background:var(--pylon-gray-100);padding:3px 10px;border-radius:6px;font-size:12px;color:var(--pylon-gray-700);word-break:break-all }
+        .pylon-info-note { font-size:11px;color:var(--pylon-gray-400);margin-left:4px }
