@@ -7,7 +7,7 @@
  * Author:      Bytenovo
  * Author URI:  https://bytenovo.com
  * Requires at least: 6.4
- * Tested up to:      7.0
+ * Tested up to:      7.1
  * Requires PHP:      7.4
  * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -22,7 +22,7 @@ define('PYLON_FILE', __FILE__);
 define('PYLON_PATH', plugin_dir_path(__FILE__));
 define('PYLON_URL', plugin_dir_url(__FILE__));
 define('PYLON_MIN_PHP', '7.4');
-define('PYLON_MIN_WP', '6.4'); // Tested up to 7.0.3
+define('PYLON_MIN_WP', '6.4'); // Tested up to 7.1
 
 if (version_compare(PHP_VERSION, PYLON_MIN_PHP, '<')) {
     add_action('admin_notices', function () {
