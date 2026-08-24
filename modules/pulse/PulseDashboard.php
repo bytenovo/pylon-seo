@@ -21,7 +21,7 @@ class PulseDashboard {
         <div class="pylon-card pp-root" id="pylon-pulse-card">
             <div class="pylon-card-header">
                 <div style="display:flex;align-items:center;gap:10px;">
-                    <span style="font-size:20px;">ðŸ“Š</span>
+                    <span style="font-size:20px;">📊</span>
                     <div>
                         <h3 style="margin:0;font-size:16px;"><?php esc_html_e('SEO Health Pulse', 'pylon-seo'); ?></h3>
                         <span class="pylon-text-12 pylon-color-muted"><?php esc_html_e('Site-wide SEO health snapshot', 'pylon-seo'); ?></span>
@@ -30,13 +30,13 @@ class PulseDashboard {
             </div>
             <div id="pylon-pulse-loading" style="padding:50px;text-align:center;">
                 <div class="pulse-spinner"></div>
-                <p style="margin-top:14px;color:#6b7280;font-size:13px;"><?php esc_html_e('Scanning all pagesâ€¦', 'pylon-seo'); ?></p>
+                <p style="margin-top:14px;color:#6b7280;font-size:13px;"><?php esc_html_e('Scanning all pages…', 'pylon-seo'); ?></p>
             </div>
             <div id="pylon-pulse-dashboard" style="display:none;padding:4px 0;">
                 <div class="pp-grid pp-grid-4" id="pp-summary"></div>
                 <div style="text-align:center;margin-top:20px;padding:8px 0 4px;">
                     <a href="<?php echo esc_url(admin_url('admin.php?page=pylon-group-audit&tab=seo-pulse')); ?>" class="pylon-btn pylon-btn-primary">
-                        <?php esc_html_e('View Full Reports', 'pylon-seo'); ?> â†’
+                        <?php esc_html_e('View Full Reports', 'pylon-seo'); ?> →
                     </a>
                 </div>
             </div>
@@ -50,7 +50,7 @@ class PulseDashboard {
         ?>
         <div class="pylon-card-header">
             <div style="display:flex;align-items:center;gap:10px;">
-                <span style="font-size:20px;">ðŸ“Š</span>
+                <span style="font-size:20px;">📊</span>
                 <div>
                     <h3><?php esc_html_e('SEO Health Pulse', 'pylon-seo'); ?></h3>
                     <span class="pylon-text-12 pylon-color-muted"><?php esc_html_e('Full site-wide SEO health report', 'pylon-seo'); ?></span>
@@ -60,35 +60,35 @@ class PulseDashboard {
         <?php if ($has_data): ?>
         <div id="pylon-pulse-loading" style="display:none;padding:50px;text-align:center;">
             <div class="pulse-spin"></div>
-            <p style="margin-top:14px;color:#6b7280;font-size:13px;"><?php esc_html_e('Scanning all pagesâ€¦', 'pylon-seo'); ?></p>
+            <p style="margin-top:14px;color:#6b7280;font-size:13px;"><?php esc_html_e('Scanning all pages…', 'pylon-seo'); ?></p>
         </div>
         <div id="pylon-pulse-dashboard">
             <?php $this->render_pulse_summary($data); ?>
             <div class="pulse-grid pulse-grid-2" style="margin-top:18px;">
                 <div class="pulse-chart">
-                    <div class="pulse-chart-title">ðŸ“ˆ <?php esc_html_e('Score Distribution', 'pylon-seo'); ?></div>
+                    <div class="pulse-chart-title">📈 <?php esc_html_e('Score Distribution', 'pylon-seo'); ?></div>
                     <div id="pp-chart-dist" class="pulse-chart-body"><?php $this->render_dist_chart_svg($data['buckets'] ?? [], $data['total_pages'] ?? 0); ?></div>
                 </div>
                 <div class="pulse-chart">
-                    <div class="pulse-chart-title">ðŸ“‰ <?php esc_html_e('Average Score Trend', 'pylon-seo'); ?></div>
+                    <div class="pulse-chart-title">📉 <?php esc_html_e('Average Score Trend', 'pylon-seo'); ?></div>
                     <div id="pp-chart-trend" class="pulse-chart-body"><?php $this->render_trend_chart_svg($data['history'] ?? [], $data['avg_score'] ?? 0); ?></div>
                 </div>
             </div>
             <div class="pulse-chart" style="margin-top:18px;">
-                <div class="pulse-chart-title">âš ï¸ <?php esc_html_e('Top Issues Across All Pages', 'pylon-seo'); ?></div>
+                <div class="pulse-chart-title">⚠️ <?php esc_html_e('Top Issues Across All Pages', 'pylon-seo'); ?></div>
                 <div id="pp-issues" class="pulse-chart-body"><?php $this->render_issues_list($data['issues'] ?? []); ?></div>
             </div>
             <div class="pulse-chart" style="margin-top:18px;">
-                <div class="pulse-chart-title">ðŸ—ºï¸ <?php esc_html_e('XML Sitemap Health', 'pylon-seo'); ?></div>
+                <div class="pulse-chart-title">🗺️ <?php esc_html_e('XML Sitemap Health', 'pylon-seo'); ?></div>
                 <div id="pp-sitemap" class="pulse-chart-body"><?php $this->render_sitemap_block($data['sitemap'] ?? []); ?></div>
             </div>
             <div class="pulse-chart" style="margin-top:18px;">
-                <div class="pulse-chart-title">â†©ï¸ <?php esc_html_e('Redirects & 404s', 'pylon-seo'); ?></div>
+                <div class="pulse-chart-title">↩️ <?php esc_html_e('Redirects & 404s', 'pylon-seo'); ?></div>
                 <div id="pp-redirects" class="pulse-chart-body"><?php $this->render_redirects_block($data['redirects'] ?? []); ?></div>
             </div>
             <div class="pulse-chart" style="margin-top:18px;">
                 <div class="pulse-chart-title" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
-                    <span>ðŸ”§ <?php esc_html_e('Pages Needing Attention', 'pylon-seo'); ?></span>
+                    <span>🔧 <?php esc_html_e('Pages Needing Attention', 'pylon-seo'); ?></span>
                     <span id="pp-table-info" style="font-size:11px;font-weight:400;color:#6b7280;"></span>
                 </div>
                 <div class="pulse-table-wrap">
@@ -113,35 +113,35 @@ class PulseDashboard {
         <?php else: ?>
         <div id="pylon-pulse-loading" style="padding:50px;text-align:center;">
             <div class="pulse-spin"></div>
-            <p style="margin-top:14px;color:#6b7280;font-size:13px;"><?php esc_html_e('Scanning all pagesâ€¦', 'pylon-seo'); ?></p>
+            <p style="margin-top:14px;color:#6b7280;font-size:13px;"><?php esc_html_e('Scanning all pages…', 'pylon-seo'); ?></p>
         </div>
         <div id="pylon-pulse-dashboard" style="display:none;">
             <div class="pulse-grid pulse-grid-4" id="pp-summary"></div>
             <div class="pulse-grid pulse-grid-2" style="margin-top:18px;">
                 <div class="pulse-chart">
-                    <div class="pulse-chart-title">ðŸ“ˆ <?php esc_html_e('Score Distribution', 'pylon-seo'); ?></div>
+                    <div class="pulse-chart-title">📈 <?php esc_html_e('Score Distribution', 'pylon-seo'); ?></div>
                     <div id="pp-chart-dist" class="pulse-chart-body"></div>
                 </div>
                 <div class="pulse-chart">
-                    <div class="pulse-chart-title">ðŸ“‰ <?php esc_html_e('Average Score Trend', 'pylon-seo'); ?></div>
+                    <div class="pulse-chart-title">📉 <?php esc_html_e('Average Score Trend', 'pylon-seo'); ?></div>
                     <div id="pp-chart-trend" class="pulse-chart-body"></div>
                 </div>
             </div>
             <div class="pulse-chart" style="margin-top:18px;">
-                <div class="pulse-chart-title">âš ï¸ <?php esc_html_e('Top Issues Across All Pages', 'pylon-seo'); ?></div>
+                <div class="pulse-chart-title">⚠️ <?php esc_html_e('Top Issues Across All Pages', 'pylon-seo'); ?></div>
                 <div id="pp-issues" class="pulse-chart-body"></div>
             </div>
             <div class="pulse-chart" style="margin-top:18px;">
-                <div class="pulse-chart-title">ðŸ—ºï¸ <?php esc_html_e('XML Sitemap Health', 'pylon-seo'); ?></div>
+                <div class="pulse-chart-title">🗺️ <?php esc_html_e('XML Sitemap Health', 'pylon-seo'); ?></div>
                 <div id="pp-sitemap" class="pulse-chart-body"></div>
             </div>
             <div class="pulse-chart" style="margin-top:18px;">
-                <div class="pulse-chart-title">â†©ï¸ <?php esc_html_e('Redirects & 404s', 'pylon-seo'); ?></div>
+                <div class="pulse-chart-title">↩️ <?php esc_html_e('Redirects & 404s', 'pylon-seo'); ?></div>
                 <div id="pp-redirects" class="pulse-chart-body"></div>
             </div>
             <div class="pulse-chart" style="margin-top:18px;">
                 <div class="pulse-chart-title" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
-                    <span>ðŸ”§ <?php esc_html_e('Pages Needing Attention', 'pylon-seo'); ?></span>
+                    <span>🔧 <?php esc_html_e('Pages Needing Attention', 'pylon-seo'); ?></span>
                     <span id="pp-table-info" style="font-size:11px;font-weight:400;color:#6b7280;"></span>
                 </div>
                 <div class="pulse-table-wrap">
@@ -172,10 +172,10 @@ class PulseDashboard {
         $good_pct = $data['good_pct'] ?? ($total > 0 ? round($good / $total * 100) : 0);
         $avg_grade = $data['avg_grade'] ?? ($avg >= 70 ? 'Good' : ($avg >= 40 ? 'Ok' : 'Poor'));
         $cards = [
-            ['icon' => 'ðŸ“„', 'val' => $total, 'lab' => __('Pages Analyzed', 'pylon-seo'), 'sub' => __('published posts & pages', 'pylon-seo'), 'bg' => 'linear-gradient(135deg,#6366f1,#8b5cf6)'],
-            ['icon' => 'â­', 'val' => $avg, 'lab' => __('Average Score', 'pylon-seo'), 'sub' => $avg_grade, 'bg' => $avg >= 70 ? 'linear-gradient(135deg,#16a34a,#22c55e)' : ($avg >= 40 ? 'linear-gradient(135deg,#f59e0b,#fbbf24)' : 'linear-gradient(135deg,#dc2626,#ef4444)')],
-            ['icon' => 'âœ…', 'val' => $good, 'lab' => __('Good Pages', 'pylon-seo'), 'sub' => $good_pct . '% ' . __('of total', 'pylon-seo'), 'bg' => 'linear-gradient(135deg,#059669,#34d399)'],
-            ['icon' => 'âš ï¸', 'val' => $poor, 'lab' => __('Poor Pages', 'pylon-seo'), 'sub' => $total > 0 ? round($poor / $total * 100) . '% ' . __('need work', 'pylon-seo') : '0%', 'bg' => 'linear-gradient(135deg,#dc2626,#f87171)'],
+            ['icon' => '📄', 'val' => $total, 'lab' => __('Pages Analyzed', 'pylon-seo'), 'sub' => __('published posts & pages', 'pylon-seo'), 'bg' => 'linear-gradient(135deg,#6366f1,#8b5cf6)'],
+            ['icon' => '⭐', 'val' => $avg, 'lab' => __('Average Score', 'pylon-seo'), 'sub' => $avg_grade, 'bg' => $avg >= 70 ? 'linear-gradient(135deg,#16a34a,#22c55e)' : ($avg >= 40 ? 'linear-gradient(135deg,#f59e0b,#fbbf24)' : 'linear-gradient(135deg,#dc2626,#ef4444)')],
+            ['icon' => '✅', 'val' => $good, 'lab' => __('Good Pages', 'pylon-seo'), 'sub' => $good_pct . '% ' . __('of total', 'pylon-seo'), 'bg' => 'linear-gradient(135deg,#059669,#34d399)'],
+            ['icon' => '⚠️', 'val' => $poor, 'lab' => __('Poor Pages', 'pylon-seo'), 'sub' => $total > 0 ? round($poor / $total * 100) . '% ' . __('need work', 'pylon-seo') : '0%', 'bg' => 'linear-gradient(135deg,#dc2626,#f87171)'],
         ];
         echo '<div class="pulse-grid pulse-grid-4" id="pp-summary">';
         foreach ($cards as $c) {
@@ -217,7 +217,7 @@ class PulseDashboard {
                         <span style="width:12px;height:12px;border-radius:3px;background:<?php echo esc_attr($seg['color']); ?>;flex-shrink:0;"></span>
                         <span style="flex:1;font-size:13px;color:#334155;"><?php echo esc_html($seg['label']); ?></span>
                         <span style="font-size:13px;font-weight:700;color:#1e293b;"><?php echo (int) $seg['value']; ?></span>
-                        <span style="width:46px;text-align:right;font-size:11px;color:#94a3b8;"><?php echo $total > 0 ? esc_html(round($seg['value'] / $total * 100) . '%') : 'â€”'; ?></span>
+                        <span style="width:46px;text-align:right;font-size:11px;color:#94a3b8;"><?php echo $total > 0 ? esc_html(round($seg['value'] / $total * 100) . '%') : '—'; ?></span>
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -255,7 +255,7 @@ class PulseDashboard {
 
     private function render_issues_list(array $issues): void {
         if (empty($issues)) {
-            echo '<div style="color:#16a34a;font-weight:500;font-size:13px;">âœ… ' . esc_html__('No major issues found â€” your site looks healthy!', 'pylon-seo') . '</div>';
+            echo '<div style="color:#16a34a;font-weight:500;font-size:13px;">✅ ' . esc_html__('No major issues found — your site looks healthy!', 'pylon-seo') . '</div>';
             return;
         }
         $maxCount = $issues[0]['count'] ?? 1;
@@ -303,7 +303,7 @@ class PulseDashboard {
         </div>
         <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
             <span style="font-size:11px;color:#64748b;"><?php esc_html_e('Post types:', 'pylon-seo'); ?> <strong style="color:#334155;"><?php echo esc_html($sm['post_types'] ?? ''); ?></strong></span>
-            <a href="<?php echo esc_url($sm['sitemap_url'] ?? home_url('/sitemap.xml')); ?>" target="_blank" style="font-size:12px;text-decoration:none;color:#6366f1;"><?php esc_html_e('Open Sitemap â†’', 'pylon-seo'); ?></a>
+            <a href="<?php echo esc_url($sm['sitemap_url'] ?? home_url('/sitemap.xml')); ?>" target="_blank" style="font-size:12px;text-decoration:none;color:#6366f1;"><?php esc_html_e('Open Sitemap →', 'pylon-seo'); ?></a>
         </div>
         <?php
     }
@@ -339,7 +339,7 @@ class PulseDashboard {
 
     private function render_worst_rows(array $items): void {
         if (empty($items)) {
-            echo '<tr><td colspan="4" style="text-align:center;padding:30px;color:#94a3b8;font-size:13px;">âœ… ' . esc_html__('All pages look good!', 'pylon-seo') . '</td></tr>';
+            echo '<tr><td colspan="4" style="text-align:center;padding:30px;color:#94a3b8;font-size:13px;">✅ ' . esc_html__('All pages look good!', 'pylon-seo') . '</td></tr>';
             return;
         }
         foreach ($items as $p) {
@@ -363,7 +363,7 @@ class PulseDashboard {
             echo '<td><a href="' . esc_url($edit_url) . '" class="pulse-plink">' . esc_html($title) . '</a></td>';
             echo '<td style="text-align:center;"><span class="pulse-badge" style="background:' . esc_attr($color) . ';">' . esc_html($score) . '</span></td>';
             echo '<td>' . wp_kses_post($missing_html) . '</td>';
-            echo '<td style="text-align:center;"><a href="' . esc_url($edit_url) . '" style="text-decoration:none;font-size:18px;color:#94a3b8;transition:color 0.15s;" title="' . esc_attr__('Edit', 'pylon-seo') . '">âœŽ</a></td>';
+            echo '<td style="text-align:center;"><a href="' . esc_url($edit_url) . '" style="text-decoration:none;font-size:18px;color:#94a3b8;transition:color 0.15s;" title="' . esc_attr__('Edit', 'pylon-seo') . '">✎</a></td>';
             echo '</tr>';
         }
     }
@@ -699,10 +699,10 @@ class PulseDashboard {
 
             function renderSummary(data){
                 var cards = [
-                    { icon: "ðŸ“„", val: data.total_pages, lab: "' . esc_js(__('Pages Analyzed', 'pylon-seo')) . '", sub: "' . esc_js(__('published posts & pages', 'pylon-seo')) . '", bg: "linear-gradient(135deg,#6366f1,#8b5cf6)" },
-                    { icon: "â­", val: data.avg_score, lab: "' . esc_js(__('Average Score', 'pylon-seo')) . '", sub: data.avg_grade, bg: data.avg_score >= 70 ? "linear-gradient(135deg,#16a34a,#22c55e)" : (data.avg_score >= 40 ? "linear-gradient(135deg,#f59e0b,#fbbf24)" : "linear-gradient(135deg,#dc2626,#ef4444)") },
-                    { icon: "âœ…", val: data.buckets.good, lab: "' . esc_js(__('Good Pages', 'pylon-seo')) . '",                     sub: data.good_pct + "% " + "' . esc_js(__('of total', 'pylon-seo')) . '", bg: "linear-gradient(135deg,#059669,#34d399)" },
-                    { icon: "âš ï¸", val: data.buckets.poor, lab: "' . esc_js(__('Poor Pages', 'pylon-seo')) . '",                     sub: data.total_pages > 0 ? Math.round(data.buckets.poor/data.total_pages*100) + "% " + "' . esc_js(__('need work', 'pylon-seo')) . '" : "0%", bg: "linear-gradient(135deg,#dc2626,#f87171)" }
+                    { icon: "📄", val: data.total_pages, lab: "' . esc_js(__('Pages Analyzed', 'pylon-seo')) . '", sub: "' . esc_js(__('published posts & pages', 'pylon-seo')) . '", bg: "linear-gradient(135deg,#6366f1,#8b5cf6)" },
+                    { icon: "⭐", val: data.avg_score, lab: "' . esc_js(__('Average Score', 'pylon-seo')) . '", sub: data.avg_grade, bg: data.avg_score >= 70 ? "linear-gradient(135deg,#16a34a,#22c55e)" : (data.avg_score >= 40 ? "linear-gradient(135deg,#f59e0b,#fbbf24)" : "linear-gradient(135deg,#dc2626,#ef4444)") },
+                    { icon: "✅", val: data.buckets.good, lab: "' . esc_js(__('Good Pages', 'pylon-seo')) . '",                     sub: data.good_pct + "% " + "' . esc_js(__('of total', 'pylon-seo')) . '", bg: "linear-gradient(135deg,#059669,#34d399)" },
+                    { icon: "⚠️", val: data.buckets.poor, lab: "' . esc_js(__('Poor Pages', 'pylon-seo')) . '",                     sub: data.total_pages > 0 ? Math.round(data.buckets.poor/data.total_pages*100) + "% " + "' . esc_js(__('need work', 'pylon-seo')) . '" : "0%", bg: "linear-gradient(135deg,#dc2626,#f87171)" }
                 ];
                 var html = "";
                 $.each(cards, function(i, c){
@@ -787,7 +787,7 @@ class PulseDashboard {
 
             function renderIssues(issues){
                 if (!issues || issues.length === 0){
-                    $("#pp-issues").html(\'<div style="color:#16a34a;font-weight:500;font-size:13px;">âœ… ' . esc_js(__('No major issues found â€” your site looks healthy!', 'pylon-seo')) . '</div>\');
+                    $("#pp-issues").html(\'<div style="color:#16a34a;font-weight:500;font-size:13px;">✅ ' . esc_js(__('No major issues found — your site looks healthy!', 'pylon-seo')) . '</div>\');
                     return;
                 }
                 var html = "";
@@ -834,7 +834,7 @@ class PulseDashboard {
                     + \'</div>\'
                     + \'<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">\'
                     + \'<span style="font-size:11px;color:#64748b;">' . esc_js(__('Post types:', 'pylon-seo')) . ' <strong style="color:#334155;">\'+sm.post_types+\'</strong></span>\'
-                    + \'<a href="\'+encodeURI(sm.sitemap_url)+\'" target="_blank" style="font-size:12px;text-decoration:none;color:#6366f1;">' . esc_js(__('Open Sitemap â†’', 'pylon-seo')) . '</a>\'
+                    + \'<a href="\'+encodeURI(sm.sitemap_url)+\'" target="_blank" style="font-size:12px;text-decoration:none;color:#6366f1;">' . esc_js(__('Open Sitemap →', 'pylon-seo')) . '</a>\'
                     + \'</div>\';
                 $("#pp-sitemap").html(html);
             }
@@ -871,7 +871,7 @@ class PulseDashboard {
                 $("#pp-table-info").text(totalWorstItems > 0 ? "' . esc_js(__('Showing', 'pylon-seo')) . ' " + start + "-" + end + " ' . esc_js(__('of', 'pylon-seo')) . ' " + totalWorstItems : "");
 
                 if (!pageData || pageData.length === 0){
-                    $tbody.html(\'<tr><td colspan="4" style="text-align:center;padding:30px;color:#94a3b8;font-size:13px;">âœ… ' . esc_js(__('All pages look good!', 'pylon-seo')) . '</td></tr>\');
+                    $tbody.html(\'<tr><td colspan="4" style="text-align:center;padding:30px;color:#94a3b8;font-size:13px;">✅ ' . esc_js(__('All pages look good!', 'pylon-seo')) . '</td></tr>\');
                     renderPagination();
                     return;
                 }
@@ -894,7 +894,7 @@ class PulseDashboard {
                         + \'<td><a href="\'+encodeURI(p.edit_url)+\'" class="pp-page-link">\'+$("<span>").text(p.title).html()+\'</a></td>\'
                         + \'<td style="text-align:center;"><span class="pp-score-badge" style="background:\'+color+\';">\'+p.score+\'</span></td>\'
                         + \'<td>\'+missHtml+\'</td>\'
-                        + \'<td style="text-align:center;"><a href="\'+encodeURI(p.edit_url)+\'" style="text-decoration:none;font-size:18px;color:#94a3b8;transition:color 0.15s;" title="' . esc_js(__('Edit', 'pylon-seo')) . '">âœŽ</a></td>\'
+                        + \'<td style="text-align:center;"><a href="\'+encodeURI(p.edit_url)+\'" style="text-decoration:none;font-size:18px;color:#94a3b8;transition:color 0.15s;" title="' . esc_js(__('Edit', 'pylon-seo')) . '">✎</a></td>\'
                         + \'</tr>\';
                 });
                 $tbody.html(html);
@@ -915,16 +915,16 @@ class PulseDashboard {
                 var $p = $("#pp-pagination");
                 if (totalWorstPages <= 1) { $p.empty(); return; }
                 var html = "";
-                html += \'<button class="pp-pg-btn" data-page="prev" \'+(currentPage<=1?"disabled":"")+\'>â€¹</button>\';
+                html += \'<button class="pp-pg-btn" data-page="prev" \'+(currentPage<=1?"disabled":"")+\'>‹</button>\';
 
                 var startP = Math.max(1, currentPage - 2);
                 var endP = Math.min(totalWorstPages, currentPage + 2);
-                if (startP > 1) { html += \'<button class="pp-pg-btn" data-page="1">1</button>\'; if (startP > 2) html += \'<span style="color:#94a3b8;font-size:12px;padding:0 2px;">â€¦</span>\'; }
+                if (startP > 1) { html += \'<button class="pp-pg-btn" data-page="1">1</button>\'; if (startP > 2) html += \'<span style="color:#94a3b8;font-size:12px;padding:0 2px;">…</span>\'; }
                 for (var p = startP; p <= endP; p++) {
                     html += \'<button class="pp-pg-btn\'+(p===currentPage?" active":"")+\'" data-page="\'+p+\'">\'+p+\'</button>\';
                 }
-                if (endP < totalWorstPages) { if (endP < totalWorstPages-1) html += \'<span style="color:#94a3b8;font-size:12px;padding:0 2px;">â€¦</span>\'; html += \'<button class="pp-pg-btn" data-page="\'+totalWorstPages+\'">\'+totalWorstPages+\'</button>\'; }
-                html += \'<button class="pp-pg-btn" data-page="next" \'+(currentPage>=totalWorstPages?"disabled":"")+\'>â€º</button>\';
+                if (endP < totalWorstPages) { if (endP < totalWorstPages-1) html += \'<span style="color:#94a3b8;font-size:12px;padding:0 2px;">…</span>\'; html += \'<button class="pp-pg-btn" data-page="\'+totalWorstPages+\'">\'+totalWorstPages+\'</button>\'; }
+                html += \'<button class="pp-pg-btn" data-page="next" \'+(currentPage>=totalWorstPages?"disabled":"")+\'>›</button>\';
                 $p.html(html);
             }
 
@@ -957,7 +957,7 @@ class PulseDashboard {
                 .done(function(data){
                     if (data.scan_complete === false) {
                         var pct = data.progress || 0;
-                        $("#pylon-pulse-loading").html(\'<div style="text-align:center;padding:40px 20px;"><div class="pulse-spinner"></div><p style="margin-top:14px;color:#6b7280;font-size:13px;">' . esc_js(__('Scanningâ€¦', 'pylon-seo')) . ' \'+pct+\'%</p></div>\');
+                        $("#pylon-pulse-loading").html(\'<div style="text-align:center;padding:40px 20px;"><div class="pulse-spinner"></div><p style="margin-top:14px;color:#6b7280;font-size:13px;">' . esc_js(__('Scanning…', 'pylon-seo')) . ' \'+pct+\'%</p></div>\');
                         setTimeout(function(){ pollScan(data.scan_id); }, 1500);
                     } else if (data && data.total_pages !== undefined) {
                         renderAllSections(data);

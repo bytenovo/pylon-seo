@@ -212,7 +212,7 @@
         return el('div', { style: { background: '#fff', border: '1px solid #e5e7eb', borderRadius: '8px', padding: '12px', marginBottom: '12px' } },
             el('div', { style: { fontSize: '11px', color: '#202124', lineHeight: '1.3' } },
                 el('span', { style: { color: '#202124' } }, link.replace(/^https?:\/\//, '')),
-                el('span', { style: { color: '#5f6368' } }, ' â€º ' + (window.pylonGutenbergData ? window.pylonGutenbergData.slug || '' : ''))
+                el('span', { style: { color: '#5f6368' } }, ' › ' + (window.pylonGutenbergData ? window.pylonGutenbergData.slug || '' : ''))
             ),
             el('div', { style: { color: '#1a0dab', fontSize: '20px', lineHeight: '1.3', paddingTop: '4px', cursor: 'pointer', wordBreak: 'break-word' } },
                 el('span', {}, titleTrunc || el('span', { style: { color: '#9ca3af' } }, __('No title', 'pylon-seo')))
@@ -352,9 +352,9 @@
         var kwInDesc = d.toLowerCase().indexOf(kwLower) !== -1;
         var kwInContent = contentText.toLowerCase().indexOf(kwLower) !== -1;
         checks.push({ id: 'kw_used', pass: kw && (kwInTitle || kwInDesc || kwInContent), label: __('Keyword in title/desc/content', 'pylon-seo') });
-        checks.push({ id: 'title_len', pass: t.length >= 10 && t.length <= 70, label: __('Title length 10â€“70 chars', 'pylon-seo'), note: t.length + ' chars' });
-        checks.push({ id: 'desc_len', pass: d.length >= 50 && d.length <= 160, label: __('Description length 50â€“160 chars', 'pylon-seo'), note: d.length + ' chars' });
-        checks.push({ id: 'content_words', pass: wordCount >= 300, label: __('Content â‰¥300 words', 'pylon-seo'), note: wordCount + ' words' });
+        checks.push({ id: 'title_len', pass: t.length >= 10 && t.length <= 70, label: __('Title length 10–70 chars', 'pylon-seo'), note: t.length + ' chars' });
+        checks.push({ id: 'desc_len', pass: d.length >= 50 && d.length <= 160, label: __('Description length 50–160 chars', 'pylon-seo'), note: d.length + ' chars' });
+        checks.push({ id: 'content_words', pass: wordCount >= 300, label: __('Content ≥300 words', 'pylon-seo'), note: wordCount + ' words' });
         checks.push({ id: 'headings', pass: headingCount > 0, label: __('Has headings', 'pylon-seo'), note: headingCount + ' headings' });
         checks.push({ id: 'images', pass: imgCount > 0, label: __('Has images', 'pylon-seo'), note: imgCount + ' images' });
 
@@ -424,7 +424,7 @@
                     onChange: function (v) { updateMeta('pylon_canonical', v); }
                 }),
                 el('div', { style: { marginTop: '12px', fontSize: '11px', color: '#9ca3af' } },
-                    el('a', { href: window.pylonGutenbergData ? window.pylonGutenbergData.full_edit_url : '', target: '_blank' }, __('Open full Pylon meta box â†’', 'pylon-seo'))
+                    el('a', { href: window.pylonGutenbergData ? window.pylonGutenbergData.full_edit_url : '', target: '_blank' }, __('Open full Pylon meta box →', 'pylon-seo'))
                 )
             ) : null
         );

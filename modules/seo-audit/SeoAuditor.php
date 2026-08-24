@@ -4,7 +4,7 @@ defined('ABSPATH') || exit;
 use Pylon\Core\HttpClient;
 
 /**
- * Pylon SEO Auditor â€” comprehensive per-page audit engine.
+ * Pylon SEO Auditor — comprehensive per-page audit engine.
  *
  * Fetches the live rendered URL of any post/page, parses the HTML, and runs
  * 40+ checks across 6 categories (On-Page, Content, Technical, Performance,
@@ -120,7 +120,7 @@ class SeoAuditor {
         ?>
         <div class="pylon-card pylon-mb-20">
             <div class="pylon-card-header">
-                <h3>ðŸ“Š <?php esc_html_e('Site Audit Overview', 'pylon-seo'); ?></h3>
+                <h3>📊 <?php esc_html_e('Site Audit Overview', 'pylon-seo'); ?></h3>
                 <span class="pylon-text-12 pylon-color-muted"><?php esc_html_e('Aggregated from all audits you have run', 'pylon-seo'); ?></span>
             </div>
             <div class="pylon-card-body">
@@ -175,7 +175,7 @@ class SeoAuditor {
         ]);
         ?>
         <div class="wrap pylon-dashboard">
-            <?php \Pylon\Core\Modules\Admin\AdminEngine::page_header(__('SEO Auditor', 'pylon-seo'), 'ðŸ”'); ?>
+            <?php \Pylon\Core\Modules\Admin\AdminEngine::page_header(__('SEO Auditor', 'pylon-seo'), '🔍'); ?>
             <p class="pylon-color-muted pylon-mb-20"><?php esc_html_e('Select any published page or post and run a full SEO audit with 40+ checks across 6 categories.', 'pylon-seo'); ?></p>
 
             <?php $this->render_site_overview(); ?>
@@ -185,14 +185,14 @@ class SeoAuditor {
                 <div class="pylon-card-body">
                     <div class="pylon-flex pylon-flex-wrap pylon-gap-12 pylon-flex-center">
                         <select id="pylon-audit-page" class="pylon-select" style="min-width:380px;">
-                            <option value=""><?php esc_html_e('â€” Select a page or post â€”', 'pylon-seo'); ?></option>
+                            <option value=""><?php esc_html_e('— Select a page or post —', 'pylon-seo'); ?></option>
                             <?php foreach ($posts as $p): ?>
                                 <option value="<?php echo esc_attr($p->ID); ?>">
                                     [<?php echo esc_html($p->post_type); ?>] <?php echo esc_html($p->post_title); ?>
                                 </option>
                             <?php endforeach; ?>
                         </select>
-                        <input type="url" id="pylon-audit-url" class="pylon-input" style="min-width:380px;" placeholder="<?php esc_attr_e('â€¦or enter any URL', 'pylon-seo'); ?>">
+                        <input type="url" id="pylon-audit-url" class="pylon-input" style="min-width:380px;" placeholder="<?php esc_attr_e('…or enter any URL', 'pylon-seo'); ?>">
                         <button type="button" class="pylon-btn pylon-btn-primary" id="pylon-audit-run">
                             <?php esc_html_e('Run Audit', 'pylon-seo'); ?>
                         </button>
@@ -334,7 +334,7 @@ class SeoAuditor {
     }
 
     /* -----------------------------------------------------------------
-     *  EXPORT â€” download audit results as CSV
+     *  EXPORT — download audit results as CSV
      * --------------------------------------------------------------- */
 
     public function ajax_export_audit(): void {
@@ -392,7 +392,7 @@ class SeoAuditor {
     }
 
     /* -----------------------------------------------------------------
-     *  AUDIT HISTORY â€” fetch score history for chart
+     *  AUDIT HISTORY — fetch score history for chart
      * --------------------------------------------------------------- */
 
     public function ajax_audit_history(): void {
@@ -433,7 +433,7 @@ class SeoAuditor {
     }
 
     /* -----------------------------------------------------------------
-     *  CONTEXT BUILDER â€” parses the fetched HTML into structured data
+     *  CONTEXT BUILDER — parses the fetched HTML into structured data
      * --------------------------------------------------------------- */
 
     private function build_context(string $url, string $html, ?\WP_Post $post): array {
@@ -566,7 +566,7 @@ class SeoAuditor {
         $title = $c['title'] ?? '';
         $checks[] = $title !== ''
             ? $this->pass('title_exists', 'on_page', __('Title tag present', 'pylon-seo'), __('A title tag was found.', 'pylon-seo'))
-            : $this->fail('title_exists', 'on_page', __('Title tag missing', 'pylon-seo'), __('No &lt;title&gt; tag detected on the page.', 'pylon-seo'), __('Add a descriptive title tag between 50â€“60 characters.', 'pylon-seo'));
+            : $this->fail('title_exists', 'on_page', __('Title tag missing', 'pylon-seo'), __('No &lt;title&gt; tag detected on the page.', 'pylon-seo'), __('Add a descriptive title tag between 50–60 characters.', 'pylon-seo'));
 
         // 2. Title length.
         $tlen = strlen($title);
@@ -589,10 +589,10 @@ class SeoAuditor {
                     __('Title too long', 'pylon-seo'),
                     sprintf(
                         /* translators: %d: title length in characters */
-                        __('Title is %d characters â€” may get truncated in search results.', 'pylon-seo'),
+                        __('Title is %d characters — may get truncated in search results.', 'pylon-seo'),
                         $tlen
                     ),
-                    __('Shorten the title to 50â€“60 characters.', 'pylon-seo')
+                    __('Shorten the title to 50–60 characters.', 'pylon-seo')
                 );
             } else {
                 $checks[] = $this->warn(
@@ -613,7 +613,7 @@ class SeoAuditor {
         $desc = $c['meta_desc'] ?? '';
         $checks[] = !empty($desc)
             ? $this->pass('desc_exists', 'on_page', __('Meta description present', 'pylon-seo'), __('A meta description was found.', 'pylon-seo'))
-            : $this->fail('desc_exists', 'on_page', __('Meta description missing', 'pylon-seo'), __('No meta description tag detected.', 'pylon-seo'), __('Add a compelling meta description between 120â€“160 characters.', 'pylon-seo'));
+            : $this->fail('desc_exists', 'on_page', __('Meta description missing', 'pylon-seo'), __('No meta description tag detected.', 'pylon-seo'), __('Add a compelling meta description between 120–160 characters.', 'pylon-seo'));
 
         // 4. Meta description length.
         $dlen = strlen($desc);
@@ -636,7 +636,7 @@ class SeoAuditor {
                     __('Description too long', 'pylon-seo'),
                     sprintf(
                         /* translators: %d: meta description length in characters */
-                        __('Description is %d characters â€” may get truncated.', 'pylon-seo'),
+                        __('Description is %d characters — may get truncated.', 'pylon-seo'),
                         $dlen
                     ),
                     __('Trim to under 160 characters.', 'pylon-seo')
@@ -651,7 +651,7 @@ class SeoAuditor {
                         __('Description is only %d characters.', 'pylon-seo'),
                         $dlen
                     ),
-                    __('Expand to 120â€“160 characters.', 'pylon-seo')
+                    __('Expand to 120–160 characters.', 'pylon-seo')
                 );
             }
         }
@@ -719,7 +719,7 @@ class SeoAuditor {
                 __('Sufficient content', 'pylon-seo'),
                 sprintf(
                     /* translators: %d: total word count */
-                    __('%d words â€” good content depth.', 'pylon-seo'),
+                    __('%d words — good content depth.', 'pylon-seo'),
                     $wc
                 )
             );
@@ -752,7 +752,7 @@ class SeoAuditor {
                 __('Multiple H1 headings', 'pylon-seo'),
                 sprintf(
                     /* translators: %d: number of H1 headings found */
-                    __('Found %d H1 tags â€” use only one.', 'pylon-seo'),
+                    __('Found %d H1 tags — use only one.', 'pylon-seo'),
                     $h1_count
                 ),
                 __('Keep a single H1 per page; demote extras to H2.', 'pylon-seo')
@@ -897,7 +897,7 @@ class SeoAuditor {
                     __('Keyword stuffing risk', 'pylon-seo'),
                     sprintf(
                         /* translators: %.1f: keyword density percentage */
-                        __('%.1f%% density is high â€” may look spammy.', 'pylon-seo'),
+                        __('%.1f%% density is high — may look spammy.', 'pylon-seo'),
                         $density
                     ),
                     __('Reduce keyword frequency; use synonyms and related terms.', 'pylon-seo')
@@ -909,7 +909,7 @@ class SeoAuditor {
                     __('Low keyword usage', 'pylon-seo'),
                     sprintf(
                         /* translators: %.1f: keyword density percentage */
-                        __('%.1f%% density â€” keyword used rarely.', 'pylon-seo'),
+                        __('%.1f%% density — keyword used rarely.', 'pylon-seo'),
                         $density
                     ),
                     __('Use the keyword a few more times naturally.', 'pylon-seo')
@@ -917,7 +917,7 @@ class SeoAuditor {
             }
         }
 
-        // 17. Readability â€” Flesch Reading Ease + Flesch-Kincaid Grade Level.
+        // 17. Readability — Flesch Reading Ease + Flesch-Kincaid Grade Level.
         if ($wc >= 100) {
             $sentences = preg_match_all('/[.!?]+/', $c['plain_text']) ?: 1;
             $syllables = $this->count_syllables($c['plain_text']);
@@ -941,7 +941,7 @@ class SeoAuditor {
 
             $message = sprintf(
                 /* translators: 1: Flesch score, 2: grade level, 3: interpretation, 4: words, 5: sentences, 6: words per sentence, 7: syllables per word */
-                __('Flesch: %1$s (Grade %2$s, %3$s) â€” %4$d words, %5$d sentences, %6$.1f w/sent, %7$.2f syl/word', 'pylon-seo'),
+                __('Flesch: %1$s (Grade %2$s, %3$s) — %4$d words, %5$d sentences, %6$.1f w/sent, %7$.2f syl/word', 'pylon-seo'),
                 $flesch, $grade, $level, $wc, $sentences, $avg_words_per_sent, $avg_syll_per_word
             );
 
@@ -1021,7 +1021,7 @@ class SeoAuditor {
                     __('Stale content', 'pylon-seo'),
                     sprintf(
                         /* translators: %d: number of days since last update */
-                        __('%d days since last update â€” very stale.', 'pylon-seo'),
+                        __('%d days since last update — very stale.', 'pylon-seo'),
                         $days_since
                     ),
                     __('Rewrite or substantially update the content to improve freshness signals.', 'pylon-seo')
@@ -1093,11 +1093,11 @@ class SeoAuditor {
         $h2 = count($c['h2_list'] ?? []);
         $h3 = count($c['h3_list'] ?? []);
         if ($h1 > 0 && $h2 > 0) {
-            $checks[] = $this->pass('heading_hierarchy', 'content', __('Heading hierarchy correct', 'pylon-seo'), __('Headings follow a proper h1 â†’ h2 structure.', 'pylon-seo'));
+            $checks[] = $this->pass('heading_hierarchy', 'content', __('Heading hierarchy correct', 'pylon-seo'), __('Headings follow a proper h1 → h2 structure.', 'pylon-seo'));
         } elseif ($h1 === 0 && $h2 === 0 && $h3 === 0) {
             $checks[] = $this->warn('heading_hierarchy', 'content', __('No headings found', 'pylon-seo'), __('The page has no heading tags at all.', 'pylon-seo'), __('Add at least an H1 and H2 headings to structure the page.', 'pylon-seo'));
         } elseif ($h1 > 0 && $h2 === 0 && $h3 > 0) {
-            $checks[] = $this->warn('heading_hierarchy', 'content', __('Heading level skipped', 'pylon-seo'), __('H1 â†’ H3 without H2 subheadings.', 'pylon-seo'), __('Insert H2 subheadings between H1 and H3 headings.', 'pylon-seo'));
+            $checks[] = $this->warn('heading_hierarchy', 'content', __('Heading level skipped', 'pylon-seo'), __('H1 → H3 without H2 subheadings.', 'pylon-seo'), __('Insert H2 subheadings between H1 and H3 headings.', 'pylon-seo'));
         } else {
             $checks[] = $this->warn(
                 'heading_hierarchy',
@@ -1105,7 +1105,7 @@ class SeoAuditor {
                 __('Sparse heading structure', 'pylon-seo'),
                 sprintf(
                     /* translators: 1: number of H1 headings, 2: number of H2 headings, 3: number of H3 headings */
-                    __('H1: %1$d, H2: %2$d, H3: %3$d â€” improve hierarchy.', 'pylon-seo'),
+                    __('H1: %1$d, H2: %2$d, H3: %3$d — improve hierarchy.', 'pylon-seo'),
                     $h1,
                     $h2,
                     $h3
@@ -1142,7 +1142,7 @@ class SeoAuditor {
                         $nofl_pct,
                         $ext
                     ),
-                    __('Use nofollow sparingly â€” only for untrusted or paid links.', 'pylon-seo')
+                    __('Use nofollow sparingly — only for untrusted or paid links.', 'pylon-seo')
                 );
             } else {
                 $checks[] = $this->warn(
@@ -1205,7 +1205,7 @@ class SeoAuditor {
                 __('URL too long', 'pylon-seo'),
                 sprintf(
                     /* translators: %d: URL length in characters */
-                    __('%d characters â€” keep URLs under 75.', 'pylon-seo'),
+                    __('%d characters — keep URLs under 75.', 'pylon-seo'),
                     $url_len
                 ),
                 __('Shorten the URL slug.', 'pylon-seo')
@@ -1261,7 +1261,7 @@ class SeoAuditor {
                 __('Clean permalink', 'pylon-seo'),
                 sprintf(
                     /* translators: %s: URL slug */
-                    __('Slug: %s â€” no dates or numeric IDs.', 'pylon-seo'),
+                    __('Slug: %s — no dates or numeric IDs.', 'pylon-seo'),
                     $slug
                 )
             );
@@ -1338,7 +1338,7 @@ class SeoAuditor {
                 __('Bloated HTML', 'pylon-seo'),
                 sprintf(
                     /* translators: %s: HTML size in kilobytes */
-                    __('HTML is %s KB â€” very heavy.', 'pylon-seo'),
+                    __('HTML is %s KB — very heavy.', 'pylon-seo'),
                     $size
                 ),
                 __('Minify HTML, remove unused code, lazy-load content.', 'pylon-seo')
@@ -1377,7 +1377,7 @@ class SeoAuditor {
                 __('Too many scripts', 'pylon-seo'),
                 sprintf(
                     /* translators: %d: number of external scripts */
-                    __('%d external scripts â€” heavy payload.', 'pylon-seo'),
+                    __('%d external scripts — heavy payload.', 'pylon-seo'),
                     $scripts
                 ),
                 __('Remove unused scripts; defer the rest.', 'pylon-seo')
@@ -1404,7 +1404,7 @@ class SeoAuditor {
                 __('Many stylesheets', 'pylon-seo'),
                 sprintf(
                     /* translators: %d: number of stylesheets */
-                    __('%d stylesheets â€” consider combining.', 'pylon-seo'),
+                    __('%d stylesheets — consider combining.', 'pylon-seo'),
                     $styles
                 ),
                 __('Combine and minify CSS files.', 'pylon-seo')
@@ -1431,7 +1431,7 @@ class SeoAuditor {
                 __('Many images', 'pylon-seo'),
                 sprintf(
                     /* translators: %d: number of images */
-                    __('%d images â€” ensure they are optimized and lazy-loaded.', 'pylon-seo'),
+                    __('%d images — ensure they are optimized and lazy-loaded.', 'pylon-seo'),
                     $imgs
                 ),
                 __('Compress images and add loading="lazy".', 'pylon-seo')
@@ -1440,7 +1440,7 @@ class SeoAuditor {
 
         // 30. Compression hint (size vs scripts).
         if ($size > 200 && $scripts > 10) {
-            $checks[] = $this->warn('compression', 'performance', __('Enable compression', 'pylon-seo'), __('Large page with many assets â€” ensure gzip/Brotli is enabled.', 'pylon-seo'), __('Enable gzip/Brotli compression at the server level.', 'pylon-seo'));
+            $checks[] = $this->warn('compression', 'performance', __('Enable compression', 'pylon-seo'), __('Large page with many assets — ensure gzip/Brotli is enabled.', 'pylon-seo'), __('Enable gzip/Brotli compression at the server level.', 'pylon-seo'));
         } else {
             $checks[] = $this->pass('compression', 'performance', __('Page payload is reasonable', 'pylon-seo'), __('No major compression red flags.', 'pylon-seo'));
         }
@@ -1501,7 +1501,7 @@ class SeoAuditor {
         // 33. Open Graph image.
         $checks[] = !empty($c['og_image'])
             ? $this->pass('og_image', 'social', __('Social share image set', 'pylon-seo'), __('og:image is present.', 'pylon-seo'))
-            : $this->warn('og_image', 'social', __('Missing share image', 'pylon-seo'), __('No og:image â€” shares will look plain.', 'pylon-seo'), __('Add an og:image (1200Ã—630px recommended).', 'pylon-seo'));
+            : $this->warn('og_image', 'social', __('Missing share image', 'pylon-seo'), __('No og:image — shares will look plain.', 'pylon-seo'), __('Add an og:image (1200×630px recommended).', 'pylon-seo'));
 
         // 34. Twitter card.
         $checks[] = !empty($c['tw_card'])
@@ -1676,7 +1676,7 @@ class SeoAuditor {
                     __('Dense paragraphs', 'pylon-seo'),
                     sprintf(
                         /* translators: %d: average words per paragraph */
-                        __('Avg. %d words per paragraph â€” break into shorter chunks.', 'pylon-seo'),
+                        __('Avg. %d words per paragraph — break into shorter chunks.', 'pylon-seo'),
                         $avg_para
                     ),
                     __('Keep paragraphs under 100 words for readability.', 'pylon-seo')
@@ -1688,10 +1688,10 @@ class SeoAuditor {
                     __('Very short paragraphs', 'pylon-seo'),
                     sprintf(
                         /* translators: %d: average words per paragraph */
-                        __('Avg. %d words per paragraph â€” may lack depth.', 'pylon-seo'),
+                        __('Avg. %d words per paragraph — may lack depth.', 'pylon-seo'),
                         $avg_para
                     ),
-                    __('Aim for 40â€“100 words per paragraph for substantive content.', 'pylon-seo')
+                    __('Aim for 40–100 words per paragraph for substantive content.', 'pylon-seo')
                 );
             }
         } elseif ($para_count === 0 && $wc > 0) {
@@ -1798,11 +1798,11 @@ class SeoAuditor {
         if (preg_match('/[^aeiou]e$/i', $w)) {
             $vowel_groups--;
         }
-        // Words ending in 'le' preceded by consonant â€” add back if needed
+        // Words ending in 'le' preceded by consonant — add back if needed
         if (preg_match('/[^aeiou]le$/i', $w) && $vowel_groups >= 1) {
             $vowel_groups++;
         }
-        // Words ending in 'sm' â€” often add a syllable
+        // Words ending in 'sm' — often add a syllable
         if (preg_match('/[aeiouy]sm$/i', $w)) {
             $vowel_groups++;
         }
@@ -1837,7 +1837,7 @@ class SeoAuditor {
                     </svg>
                     <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
                         <div style="font-size:34px;font-weight:700;line-height:1;color:<?php echo esc_attr($score_color); ?>;"><?php echo (int) $score; ?></div>
-                        <div style="font-size:11px;color:var(--pylon-gray-500);"><?php echo esc_html($grade); ?> Â· <?php echo esc_html($summary['grade_label']); ?></div>
+                        <div style="font-size:11px;color:var(--pylon-gray-500);"><?php echo esc_html($grade); ?> · <?php echo esc_html($summary['grade_label']); ?></div>
                     </div>
                 </div>
                 <!-- Title + stats -->
@@ -1845,17 +1845,17 @@ class SeoAuditor {
                     <h2 style="margin:0 0 4px;font-size:18px;"><?php echo esc_html($title ?: basename($url)); ?></h2>
                     <a href="<?php echo esc_url($url); ?>" target="_blank" rel="noopener" style="font-size:12px;color:var(--pylon-primary);word-break:break-all;"><?php echo esc_html($url); ?></a>
                     <div class="pylon-flex pylon-gap-16 pylon-mt-12 pylon-flex-wrap">
-                        <span class="pylon-badge pylon-badge-green">âœ“ <?php echo esc_html(sprintf(
+                        <span class="pylon-badge pylon-badge-green">✓ <?php echo esc_html(sprintf(
                             /* translators: %d: number of passed checks */
                             __('%d passed', 'pylon-seo'),
                             $summary['passed']
                         )); ?></span>
-                        <span class="pylon-badge pylon-badge-amber">âš  <?php echo esc_html(sprintf(
+                        <span class="pylon-badge pylon-badge-amber">⚠ <?php echo esc_html(sprintf(
                             /* translators: %d: number of warnings */
                             __('%d warnings', 'pylon-seo'),
                             $summary['warnings']
                         )); ?></span>
-                        <span class="pylon-badge pylon-badge-red">âœ• <?php echo esc_html(sprintf(
+                        <span class="pylon-badge pylon-badge-red">✕ <?php echo esc_html(sprintf(
                             /* translators: %d: number of failed checks */
                             __('%d failed', 'pylon-seo'),
                             $summary['failed']
@@ -1900,7 +1900,7 @@ class SeoAuditor {
                 <button type="button" class="pylon-btn pylon-btn-sm pylon-btn-secondary pylon-audit-filter" data-filter="pass"><?php esc_html_e('Passed', 'pylon-seo'); ?></button>
             </div>
             <button type="button" class="pylon-btn pylon-btn-sm pylon-btn-secondary pylon-export-csv" data-post-id="<?php echo esc_attr((int) $post_id); ?>">
-                <?php esc_html_e('â¬‡ Export CSV', 'pylon-seo'); ?>
+                <?php esc_html_e('⬇ Export CSV', 'pylon-seo'); ?>
             </button>
         </div>
 
@@ -1913,7 +1913,7 @@ class SeoAuditor {
             <div class="pylon-card-body pylon-history-chart" data-post-id="<?php echo esc_attr((int) $post_id); ?>">
                 <div class="pylon-text-center pylon-color-muted" style="padding:20px;">
                     <div class="pylon-spinner" style="display:inline-block;width:24px;height:24px;border:3px solid var(--pylon-gray-200);border-top-color:var(--pylon-primary);border-radius:50%;animation:pylon-spin 0.6s linear infinite;"></div>
-                    <p style="margin-top:8px;font-size:12px;"><?php esc_html_e('Loading historyâ€¦', 'pylon-seo'); ?></p>
+                    <p style="margin-top:8px;font-size:12px;"><?php esc_html_e('Loading history…', 'pylon-seo'); ?></p>
                 </div>
             </div>
         </div>
@@ -1923,7 +1923,7 @@ class SeoAuditor {
             <div class="pylon-card-header"><h3><?php esc_html_e('Detailed Audit Report', 'pylon-seo'); ?></h3></div>
             <div class="pylon-card-body" style="padding:0;">
                 <?php foreach ($results as $r): 
-                    $icon = $r['status'] === 'pass' ? 'âœ“' : ($r['status'] === 'warn' ? 'âš ' : 'âœ•');
+                    $icon = $r['status'] === 'pass' ? '✓' : ($r['status'] === 'warn' ? '⚠' : '✕');
                     $color = $r['status'] === 'pass' ? 'var(--pylon-success)' : ($r['status'] === 'warn' ? 'var(--pylon-warning)' : 'var(--pylon-danger)');
                     $cat_label = self::CATEGORY_LABELS[$r['category']] ?? $r['category'];
                 ?>
@@ -1974,8 +1974,8 @@ class SeoAuditor {
                 var $btn = $("#pylon-audit-run");
                 var $results = $("#pylon-audit-results");
                 var origText = $btn.html();
-                $btn.prop("disabled", true).html(\'<span class="pylon-spinner" style="display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,0.3);border-top-color:#fff;border-radius:50%;animation:pylon-spin 0.6s linear infinite;vertical-align:middle;"></span> ' . esc_js(__('Auditingâ€¦', 'pylon-seo')) . '\');
-                $results.html(\'<div class="pylon-card"><div class="pylon-card-body pylon-text-center" style="padding:60px;"><div class="pylon-spinner" style="display:inline-block;width:40px;height:40px;border:4px solid var(--pylon-gray-200);border-top-color:var(--pylon-primary);border-radius:50%;animation:pylon-spin 0.6s linear infinite;"></div><p style="margin-top:16px;color:var(--pylon-gray-500);">' . esc_js(__('Fetching page and running 45+ SEO checksâ€¦', 'pylon-seo')) . '</p></div></div>\');
+                $btn.prop("disabled", true).html(\'<span class="pylon-spinner" style="display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,0.3);border-top-color:#fff;border-radius:50%;animation:pylon-spin 0.6s linear infinite;vertical-align:middle;"></span> ' . esc_js(__('Auditing…', 'pylon-seo')) . '\');
+                $results.html(\'<div class="pylon-card"><div class="pylon-card-body pylon-text-center" style="padding:60px;"><div class="pylon-spinner" style="display:inline-block;width:40px;height:40px;border:4px solid var(--pylon-gray-200);border-top-color:var(--pylon-primary);border-radius:50%;animation:pylon-spin 0.6s linear infinite;"></div><p style="margin-top:16px;color:var(--pylon-gray-500);">' . esc_js(__('Fetching page and running 45+ SEO checks…', 'pylon-seo')) . '</p></div></div>\');
 
                 pylonAjax("pylon_seo_audit_run", {
                     post_id: postId,
@@ -2013,13 +2013,13 @@ class SeoAuditor {
 
             initFilters();
 
-            /* â”€â”€ Export CSV â”€â”€ */
+            /* ── Export CSV ── */
             $(document).on("click", ".pylon-export-csv", function(){
                 var $btn = $(this);
                 var postId = $btn.data("post-id");
                 if (!postId) { pylonToast("Notice", "' . esc_js(__('Save the post first.', 'pylon-seo')) . '", "warning"); return; }
                 var origText = $btn.html();
-                $btn.prop("disabled", true).html("' . esc_js(__('Exportingâ€¦', 'pylon-seo')) . '");
+                $btn.prop("disabled", true).html("' . esc_js(__('Exporting…', 'pylon-seo')) . '");
                 pylonAjax("pylon_export_audit", {
                     post_id: postId,
                     _ajax_nonce: auditNonce
@@ -2041,7 +2041,7 @@ class SeoAuditor {
                 });
             });
 
-            /* â”€â”€ Score History Chart â”€â”€ */
+            /* ── Score History Chart ── */
             function loadAuditHistory(postId){
                 var $chart = $(".pylon-history-chart[data-post-id=\\""+postId+"\\"]");
                 if (!$chart.length) return;
@@ -2081,8 +2081,8 @@ class SeoAuditor {
                     \'<line x1="\'+pad+\'" y1="\'+pad+\'" x2="\'+pad+\'" y2="\'+(h-pad)+\'" stroke="#e5e7eb" stroke-width="1"/>\' +
                     \'</svg>\' +
                     (latest ? \'<div style="font-size:12px;color:#6b7280;margin-top:4px;">\' +
-                        \'Latest: <strong style="color:\'+color+\'">\'+latest.score+\'</strong> (\'+latest.grade+\') Â· \' +
-                        \'Passed: \'+latest.passed+\' Â· Warnings: \'+latest.warnings+\' Â· Failed: \'+latest.failed +
+                        \'Latest: <strong style="color:\'+color+\'">\'+latest.score+\'</strong> (\'+latest.grade+\') · \' +
+                        \'Passed: \'+latest.passed+\' · Warnings: \'+latest.warnings+\' · Failed: \'+latest.failed +
                         \'</div>\' : \'\') +
                     \'</div>\';
             }
