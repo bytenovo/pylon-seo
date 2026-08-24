@@ -3,7 +3,7 @@
  * Plugin Name: Pylon SEO
  * Plugin URI:  https://bytenovo.com/wordpress/plugin/pylon-seo
  * Description: All-in-one WordPress SEO. Meta tags, Open Graph, schema markup, XML sitemaps, redirects, 404 monitoring, content analysis, image SEO, broken link checker, and more. Built by Bytenovo.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Bytenovo
  * Author URI:  https://bytenovo.com
  * Requires at least: 6.4
@@ -17,7 +17,7 @@
 
 defined('ABSPATH') || exit;
 
-define('PYLON_VERSION', '1.0.0');
+define('PYLON_VERSION', '1.0.1');
 define('PYLON_FILE', __FILE__);
 define('PYLON_PATH', plugin_dir_path(__FILE__));
 define('PYLON_URL', plugin_dir_url(__FILE__));
