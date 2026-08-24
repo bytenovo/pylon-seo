@@ -19,7 +19,20 @@
 
     function pylonEstimatePixels(text, fontSize) {
         fontSize = fontSize || 13;
-        var widths = { a: 5.5, b: 5.8, c: 5.2, d: 5.8, e: 5.4, f: 3.5, g: 5.5, h: 5.7, i: 2.5, j: 2.5, k: 5.2, l: 2.5, m: 8.5, n: 5.7, o: 5.6, p: 5.7, q: 5.7, r: 3.6, s: 5, t: 3.5, u: 5.7, v: 5.2, w: 7.5, x: 5, y: 5.2, z: 5, A: 6.8, B: 6.3, C: 6.8, D: 7, E: 5.8, F: 5.5, G: 7.2, H: 7, I: 3, J: 4.5, K: 6, L: 5.5, M: 8.5, N: 7, O: 7.5, P: 6, Q: 7.5, R: 6.3, S: 6, T: 6.5, U: 7, V: 6.5, W: 9.5, X: 6.5, Y: 6.5, Z: 6, '0': 5.5, '1': 3.5, '2': 5.5, '3': 5.5, '4': 5.8, '5': 5.5, '6': 5.5, '7': 5.5, '8': 5.5, '9': 5.5 };
+        // Approximate per-character pixel widths at 13px system font, used
+        // to estimate whether a title will be truncated in search results.
+        var widths = {
+            a: 5.5, b: 5.8, c: 5.2, d: 5.8, e: 5.4, f: 3.5, g: 5.5,
+            h: 5.7, i: 2.5, j: 2.5, k: 5.2, l: 2.5, m: 8.5, n: 5.7,
+            o: 5.6, p: 5.7, q: 5.7, r: 3.6, s: 5,   t: 3.5, u: 5.7,
+            v: 5.2, w: 7.5, x: 5,   y: 5.2, z: 5,
+            A: 6.8, B: 6.3, C: 6.8, D: 7,   E: 5.8, F: 5.5, G: 7.2,
+            H: 7,   I: 3,   J: 4.5, K: 6,   L: 5.5, M: 8.5, N: 7,
+            O: 7.5, P: 6,   Q: 7.5, R: 6.3, S: 6,   T: 6.5, U: 7,
+            V: 6.5, W: 9.5, X: 6.5, Y: 6.5, Z: 6,
+            '0': 5.5, '1': 3.5, '2': 5.5, '3': 5.5, '4': 5.8,
+            '5': 5.5, '6': 5.5, '7': 5.5, '8': 5.5, '9': 5.5
+        };
         var total = 0;
         for (var i = 0; i < text.length; i++) { total += widths[text[i]] || 4; }
         return total * (fontSize / 13);
@@ -173,7 +186,12 @@
         },
             el('svg', { viewBox: '0 0 36 36', width: '48', height: '48' },
                 el('path', { className: 'pylon-score-bg', d: 'M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831', fill: 'none', stroke: '#e5e7eb', strokeWidth: '3' }),
-                el('path', { className: 'pylon-score-fill', d: 'M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831', fill: 'none', stroke: info.color, strokeWidth: '3', strokeDasharray: dashArray, strokeLinecap: 'round' })
+                el('path', {
+                    className: 'pylon-score-fill',
+                    d: 'M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831',
+                    fill: 'none', stroke: info.color, strokeWidth: '3',
+                    strokeDasharray: dashArray, strokeLinecap: 'round'
+                })
             ),
             el('div', { style: { textAlign: 'left' } },
                 el('div', { style: { fontSize: '20px', fontWeight: '700', color: info.color } }, Math.round(score)),
@@ -329,7 +347,11 @@
         var t = title || postTitle || '';
         var d = desc || excerpt || '';
         checks.push({ id: 'keyword', pass: !!kw, label: __('Keyword set', 'pylon-seo') });
-        checks.push({ id: 'kw_used', pass: kw && (t.toLowerCase().indexOf(kw.toLowerCase()) !== -1 || d.toLowerCase().indexOf(kw.toLowerCase()) !== -1 || contentText.toLowerCase().indexOf(kw.toLowerCase()) !== -1), label: __('Keyword in title/desc/content', 'pylon-seo') });
+        var kwLower = kw.toLowerCase();
+        var kwInTitle = t.toLowerCase().indexOf(kwLower) !== -1;
+        var kwInDesc = d.toLowerCase().indexOf(kwLower) !== -1;
+        var kwInContent = contentText.toLowerCase().indexOf(kwLower) !== -1;
+        checks.push({ id: 'kw_used', pass: kw && (kwInTitle || kwInDesc || kwInContent), label: __('Keyword in title/desc/content', 'pylon-seo') });
         checks.push({ id: 'title_len', pass: t.length >= 10 && t.length <= 70, label: __('Title length 10â€“70 chars', 'pylon-seo'), note: t.length + ' chars' });
         checks.push({ id: 'desc_len', pass: d.length >= 50 && d.length <= 160, label: __('Description length 50â€“160 chars', 'pylon-seo'), note: d.length + ' chars' });
         checks.push({ id: 'content_words', pass: wordCount >= 300, label: __('Content â‰¥300 words', 'pylon-seo'), note: wordCount + ' words' });
@@ -527,7 +549,13 @@
                 el('div', { style: { fontSize: '28px', fontWeight: '700', color: data.score >= 80 ? '#22c55e' : data.score >= 60 ? '#f59e0b' : data.score >= 40 ? '#f97316' : '#ef4444' } }, data.score),
                 el('div', { style: { fontSize: '11px', color: '#9ca3af' } }, __('Overall Score', 'pylon-seo') + ' (' + passCount + '/' + totalCount + ' ' + __('pass', 'pylon-seo') + ')'),
                 el('div', { style: { height: '4px', background: '#e5e7eb', borderRadius: '2px', marginTop: '8px', overflow: 'hidden' } },
-                    el('div', { style: { height: '100%', width: data.score + '%', background: data.score >= 80 ? '#22c55e' : data.score >= 60 ? '#f59e0b' : data.score >= 40 ? '#f97316' : '#ef4444', borderRadius: '2px', transition: 'width 0.3s' } })
+                    el('div', {
+                        style: {
+                            height: '100%', width: data.score + '%',
+                            background: data.score >= 80 ? '#22c55e' : data.score >= 60 ? '#f59e0b' : data.score >= 40 ? '#f97316' : '#ef4444',
+                            borderRadius: '2px', transition: 'width 0.3s'
+                        }
+                    })
                 )
             ),
             el('div', { style: { display: 'flex', gap: '2px', marginBottom: '12px', borderBottom: '1px solid #e5e7eb', paddingBottom: '8px', flexWrap: 'wrap' } },
@@ -570,7 +598,11 @@
                             el('div', { style: { fontWeight: '500', color: '#374151', lineHeight: '1.3' } }, c.label),
                             c.value ? el('div', { style: { color: '#9ca3af', fontSize: '10px', marginTop: '2px' } }, c.value) : null,
                             c.status !== 'pass' && c.status !== 'info' && c.suggestion ? el('div', {
-                                style: { color: '#6b7280', fontSize: '10px', marginTop: '4px', padding: '6px 8px', background: '#f9fafb', borderRadius: '4px', lineHeight: '1.4', borderLeft: '3px solid ' + (statusColors[c.status] || '#9ca3af') }
+                                style: {
+                                    color: '#6b7280', fontSize: '10px', marginTop: '4px', padding: '6px 8px',
+                                    background: '#f9fafb', borderRadius: '4px', lineHeight: '1.4',
+                                    borderLeft: '3px solid ' + (statusColors[c.status] || '#9ca3af')
+                                }
                             }, c.suggestion) : null
                         )
                     );
@@ -597,7 +629,13 @@
                             el('span', { style: { fontSize: '14px', flexShrink: 0, marginTop: '1px' } }, issue.icon),
                             el('div', { style: { flex: 1, minWidth: 0 } },
                                 el('div', { style: { fontWeight: '600', color: '#374151', lineHeight: '1.3', marginBottom: '2px' } }, issue.label),
-                                el('div', { style: { color: '#6b7280', fontSize: '10px', lineHeight: '1.4', overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' } }, issue.text)
+                                el('div', {
+                                    style: {
+                                        color: '#6b7280', fontSize: '10px', lineHeight: '1.4',
+                                        overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box',
+                                        WebkitLineClamp: 2, WebkitBoxOrient: 'vertical'
+                                    }
+                                }, issue.text)
                             )
                         );
                     })

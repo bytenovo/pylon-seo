@@ -1,5 +1,10 @@
         .pylon-pagination { display:flex;justify-content:center;margin-top:16px;gap:4px }
-        .pylon-pagination a,.pylon-pagination span { display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:36px;padding:0 10px;font-size:13px;border:1px solid #d0d5dd;border-radius:6px;text-decoration:none;color:#344054;background:#fff;transition:0.15s }
+        .pylon-pagination a,.pylon-pagination span {
+            display:inline-flex;align-items:center;justify-content:center;
+            min-width:36px;height:36px;padding:0 10px;font-size:13px;
+            border:1px solid #d0d5dd;border-radius:6px;text-decoration:none;
+            color:#344054;background:#fff;transition:0.15s
+        }
         .pylon-pagination a:hover { background:#f2f4f7;border-color:#98a2b3 }
         .pylon-pagination .current { background:#155eef;color:#fff;border-color:#155eef;font-weight:600 }
         .pylon-pagination .dots { border:none;background:none;min-width:auto;padding:0 4px;color:#98a2b3 }

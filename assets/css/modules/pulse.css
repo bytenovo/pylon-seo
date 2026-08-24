@@ -29,7 +29,13 @@
         .pp-root .pp-page-link { text-decoration:none;font-weight:500;color:#1e293b; }
         .pp-root .pp-page-link:hover { color:#6366f1; }
 
-        .pp-root .pp-pg-btn { display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:32px;padding:0 8px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;font-size:12px;font-weight:500;color:#475569;cursor:pointer;transition:all 0.15s; }
+        .pp-root .pp-pg-btn {
+            display:inline-flex;align-items:center;justify-content:center;
+            min-width:32px;height:32px;padding:0 8px;
+            border:1px solid #e2e8f0;border-radius:6px;background:#fff;
+            font-size:12px;font-weight:500;color:#475569;
+            cursor:pointer;transition:all 0.15s;
+        }
         .pp-root .pp-pg-btn:hover { border-color:#6366f1;color:#6366f1;background:#eef2ff; }
         .pp-root .pp-pg-btn.active { background:#6366f1;border-color:#6366f1;color:#fff; }
         .pp-root .pp-pg-btn:disabled { opacity:0.35;cursor:default; }
@@ -67,7 +73,13 @@
         .pulse-tag.t-kw, .pulse-tag.m-kw, .pp-missing-tag.m-kw { background:#dbeafe;color:#1e40af; }
         .pulse-plink, .pp-page-link { text-decoration:none;font-weight:500;color:#1e293b; }
         .pulse-plink:hover, .pp-page-link:hover { color:#6366f1; }
-        .pulse-pg-btn, .pp-pg-btn { display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:32px;padding:0 8px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;font-size:12px;font-weight:500;color:#475569;cursor:pointer;transition:all 0.15s; }
+        .pulse-pg-btn, .pp-pg-btn {
+            display:inline-flex;align-items:center;justify-content:center;
+            min-width:32px;height:32px;padding:0 8px;
+            border:1px solid #e2e8f0;border-radius:6px;background:#fff;
+            font-size:12px;font-weight:500;color:#475569;
+            cursor:pointer;transition:all 0.15s;
+        }
         .pulse-pg-btn:hover, .pp-pg-btn:hover { border-color:#6366f1;color:#6366f1;background:#eef2ff; }
         .pulse-pg-btn.active, .pp-pg-btn.active { background:#6366f1;border-color:#6366f1;color:#fff; }
         .pulse-pg-btn:disabled, .pp-pg-btn:disabled { opacity:0.35;cursor:default; }
