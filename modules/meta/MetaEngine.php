@@ -39,9 +39,10 @@ class MetaEngine {
                 $overrides[$field] = sanitize_text_field(wp_unslash($_POST[$key]));
             }
         }
-        if (isset($_POST['content']) && is_string($_POST['content'])) {
-            $overrides['content'] = sanitize_textarea_field(wp_unslash($_POST['content']));
-        }
+        // Content is intentionally NOT accepted as an override: raw editor
+        // markup differs from the tier-resolved content used everywhere else
+        // (post list, indexables), which caused edit-screen vs list mismatch.
+        // Always resolve server-side so every surface shows the same score.
 
         $data = \Pylon\Core\Modules\Content\ContentScore::get_score_data($post, $overrides);
         wp_send_json_success($data);

@@ -231,7 +231,8 @@ class IndexablesEngine {
 
     public function index_post(int $post_id, \WP_Post $post): void {
         if (wp_is_post_revision($post_id) || wp_is_post_autosave($post_id)) return;
-        if (!in_array($post->post_status, ['publish', 'private'])) return;
+        $post = get_post($post_id);
+        if (!$post || !in_array($post->post_status, ['publish', 'private'])) return;
 
         global $wpdb;
         $table = self::table();
