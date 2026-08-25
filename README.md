@@ -117,6 +117,11 @@ Yes. It disables the core sitemap and replaces it with a customizable XML sitema
 
 ## Changelog
 
+### 1.0.1
+* Review hardening: JSON-LD output now emitted via wp_print_inline_script_tag().
+* Fixed mojibake (double-encoded UTF-8) characters in admin dashboard labels.
+* Confirmed WordPress 7.1 compatibility.
+
 ### 1.0.0
 * Initial release.
 * See `readme.txt` for the full list.

@@ -12,39 +12,39 @@ SEO plugin with schema markup, sitemaps, redirects, content analysis, image SEO,
 
 == Description ==
 
-Pylon SEO gives you everything you need to optimize your WordPress site for search engines. Built by Bytenovo, every core feature is free and fully functional â€” no locked features, no blurred pages, no limits.
+Pylon SEO gives you everything you need to optimize your WordPress site for search engines. Built by Bytenovo, every core feature is free and fully functional — no locked features, no blurred pages, no limits.
 
 = Core Features =
 
-* **Meta Tags** â€” Edit titles, descriptions, Open Graph, Twitter Cards, canonical URLs, and robots meta per post. Full control over your `<head>` output.
-* **XML Sitemaps** â€” Dynamic sitemaps with per-post-type pagination, priority and changefreq settings. Replaces WordPress core sitemap.
-* **Schema Markup** â€” Injects JSON-LD for Article, Product, FAQ, LocalBusiness, BreadcrumbList, and more. Auto FAQ extraction from page headings.
-* **Redirect Manager** â€” Create and manage 301/302/307/308/410/451 redirects. Built-in 404 monitor tracks hits per URL. Supports regex patterns. Import/export in CSV. 410/451 serve the correct HTTP status without redirecting.
-* **LLMs.txt** â€” Publish a machine-readable /llms.txt and /llms-full.txt so AI engines (Google AI, ChatGPT, Perplexity) can understand your site.
-* **Titles & Crawl Rules** â€” Optional Title Case conversion for generated titles and automatic noindex for password-protected pages.
-* **Content Analysis** â€” On-page readability check with keyword density, heading structure, image alt attributes, and internal link analysis.
-* **Image SEO** â€” Scan your media library for missing alt text, bad filenames, and oversized images. Edit alt text right from the table.
-* **Link Assistant** â€” Smart internal link suggestions based on content similarity with one-click insertion.
-* **Broken Link Checker** â€” Detect and fix broken links and outbound link issues.
-* **Content Freshness** â€” Automatic stale content detection with freshness score (0-100). Daily cron identifies posts needing updates.
-* **Author E-E-A-T** â€” Enhanced author profiles with photo, bio, credentials, and topical expertise. Outputs structured Person schema markup.
-* **IndexNow Protocol** â€” Auto-submit URLs to IndexNow-compatible search engines on publish or update. Serves API key file.
-* **Breadcrumbs** â€” Shortcode `[pylon_breadcrumb]` and Gutenberg block for Schema.org BreadcrumbList markup.
-* **Local SEO** â€” LocalBusiness schema, location data, and an embedded map preview.
-* **Robots.txt Editor** â€” Read and edit your robots.txt with automatic fallback to WordPress defaults.
-* **HTML Sitemap** â€” Human-readable sitemap via `[pylon_html_sitemap]` with pages, posts, taxonomies, and CPTs.
-* **Keyword Research** â€” Content gaps and AEO question ideas derived from your on-site coverage.
-* **Multilingual / Hreflang** â€” Automatic hreflang for WPML, Polylang, TranslatePress, and Weglot.
-* **Conflict Detector** â€” Warns when other SEO plugins would duplicate meta, schema, or sitemaps.
-* **Site Verification** â€” Verify your site with Google, Bing, Yandex, Baidu, Pinterest, Norton, and Alexa in one place.
-* **RSS Optimization** â€” Add custom content before and after feed items.
-* **Migrator** â€” One-click import from Yoast, Rank Math, AIOSEO, SEOPress, Slim SEO, and 10+ other plugins.
-* **SEO Pulse Dashboard** â€” At-a-glance health, usage stats, and quick actions in one place.
-* **System Status** â€” Environment and plugin diagnostics for troubleshooting.
+* **Meta Tags** — Edit titles, descriptions, Open Graph, Twitter Cards, canonical URLs, and robots meta per post. Full control over your `<head>` output.
+* **XML Sitemaps** — Dynamic sitemaps with per-post-type pagination, priority and changefreq settings. Replaces WordPress core sitemap.
+* **Schema Markup** — Injects JSON-LD for Article, Product, FAQ, LocalBusiness, BreadcrumbList, and more. Auto FAQ extraction from page headings.
+* **Redirect Manager** — Create and manage 301/302/307/308/410/451 redirects. Built-in 404 monitor tracks hits per URL. Supports regex patterns. Import/export in CSV. 410/451 serve the correct HTTP status without redirecting.
+* **LLMs.txt** — Publish a machine-readable /llms.txt and /llms-full.txt so AI engines (Google AI, ChatGPT, Perplexity) can understand your site.
+* **Titles & Crawl Rules** — Optional Title Case conversion for generated titles and automatic noindex for password-protected pages.
+* **Content Analysis** — On-page readability check with keyword density, heading structure, image alt attributes, and internal link analysis.
+* **Image SEO** — Scan your media library for missing alt text, bad filenames, and oversized images. Edit alt text right from the table.
+* **Link Assistant** — Smart internal link suggestions based on content similarity with one-click insertion.
+* **Broken Link Checker** — Detect and fix broken links and outbound link issues.
+* **Content Freshness** — Automatic stale content detection with freshness score (0-100). Daily cron identifies posts needing updates.
+* **Author E-E-A-T** — Enhanced author profiles with photo, bio, credentials, and topical expertise. Outputs structured Person schema markup.
+* **IndexNow Protocol** — Auto-submit URLs to IndexNow-compatible search engines on publish or update. Serves API key file.
+* **Breadcrumbs** — Shortcode `[pylon_breadcrumb]` and Gutenberg block for Schema.org BreadcrumbList markup.
+* **Local SEO** — LocalBusiness schema, location data, and an embedded map preview.
+* **Robots.txt Editor** — Read and edit your robots.txt with automatic fallback to WordPress defaults.
+* **HTML Sitemap** — Human-readable sitemap via `[pylon_html_sitemap]` with pages, posts, taxonomies, and CPTs.
+* **Keyword Research** — Content gaps and AEO question ideas derived from your on-site coverage.
+* **Multilingual / Hreflang** — Automatic hreflang for WPML, Polylang, TranslatePress, and Weglot.
+* **Conflict Detector** — Warns when other SEO plugins would duplicate meta, schema, or sitemaps.
+* **Site Verification** — Verify your site with Google, Bing, Yandex, Baidu, Pinterest, Norton, and Alexa in one place.
+* **RSS Optimization** — Add custom content before and after feed items.
+* **Migrator** — One-click import from Yoast, Rank Math, AIOSEO, SEOPress, Slim SEO, and 15+ other plugins.
+* **SEO Pulse Dashboard** — At-a-glance health, usage stats, and quick actions in one place.
+* **System Status** — Environment and plugin diagnostics for troubleshooting.
 
 == Installation ==
 
-1. Upload the `pylon-seo` folder to `/wp-content/plugins/` or install via **Plugins â†’ Add New**.
+1. Upload the `pylon-seo` folder to `/wp-content/plugins/` or install via **Plugins → Add New**.
 2. Activate the plugin through the **Plugins** screen.
 3. A 5-step onboarding wizard will guide you through initial setup.
 
@@ -61,7 +61,7 @@ Pylon SEO gives you everything you need to optimize your WordPress site for sear
 The IndexNow feature notifies IndexNow-compatible search engines when content is published or updated on your site, so they can crawl it sooner.
 
 * What is sent: your site's host name, your IndexNow API key, and the URLs of published or updated posts.
-* When: immediately after a post is published or updated, while the feature is enabled (Pylon SEO â†’ IndexNow).
+* When: immediately after a post is published or updated, while the feature is enabled (Pylon SEO → IndexNow).
 * The service is provided by the IndexNow protocol sponsors (Microsoft Bing, Naver, Seznam.cz, Yandex, and Yep). Submissions are made to the IndexNow endpoint and shared with participating search engines. The verification key file proving site ownership is hosted on your own site and accessed by participating search engines.
 * Terms of use: https://www.indexnow.org/terms
 * Privacy policy: https://www.indexnow.org/terms (the IndexNow Terms of Service include a privacy statement)
@@ -81,13 +81,13 @@ The Local SEO module shows an embedded map preview in the admin settings using O
 The complete source code of this plugin is publicly available at:
 https://github.com/bytenovo/pylon-seo
 
-All JavaScript and CSS shipped with this plugin is hand-written, human-readable source code. Nothing is compiled, bundled, minified, or generated by build tools â€” the files in `assets/js/` and `assets/css/` are the original, complete source and can be reviewed, studied, and modified directly:
+All JavaScript and CSS shipped with this plugin is hand-written, human-readable source code. Nothing is compiled, bundled, minified, or generated by build tools — the files in `assets/js/` and `assets/css/` are the original, complete source and can be reviewed, studied, and modified directly:
 
-* `assets/js/gutenberg-sidebar.js` â€” Gutenberg sidebar (plain ES5, no framework build)
-* `assets/js/admin.js` â€” admin application logic
-* `assets/css/admin.css` â€” shared admin styles
-* `assets/css/modules/*.css` â€” per-module admin styles
-* `assets/js/modules/*.js` â€” per-module scripts
+* `assets/js/gutenberg-sidebar.js` — Gutenberg sidebar (plain ES5, no framework build)
+* `assets/js/admin.js` — admin application logic
+* `assets/css/admin.css` — shared admin styles
+* `assets/css/modules/*.css` — per-module admin styles
+* `assets/js/modules/*.js` — per-module scripts
 
 There are no third-party runtime libraries, no npm/composer dependencies, and no minified `.min` files anywhere in the plugin.
 
@@ -95,7 +95,7 @@ There are no third-party runtime libraries, no npm/composer dependencies, and no
 
 = Can I import my settings from another SEO plugin? =
 
-Yes. Navigate to Pylon SEO â†’ Migrator and select your previous plugin. Pylon SEO supports imports from Yoast, Rank Math, AIOSEO, SEOPress, Slim SEO, and 10+ other plugins.
+Yes. Navigate to Pylon SEO → Migrator and select your previous plugin. Pylon SEO supports imports from Yoast, Rank Math, AIOSEO, SEOPress, Slim SEO, and 15+ other plugins.
 
 = What happens to my data if I deactivate Pylon SEO? =
 
@@ -103,7 +103,7 @@ All SEO meta fields remain in the database. Your content retains all existing ti
 
 = Will Pylon SEO slow down my site? =
 
-No. Frontend impact is minimal â€” only essential modules load on the frontend. Admin modules load exclusively in wp-admin. The redirect engine uses an in-memory cache, and dashboard stats are cached in short-term transients.
+No. Frontend impact is minimal — only essential modules load on the frontend. Admin modules load exclusively in wp-admin. The redirect engine uses an in-memory cache, and dashboard stats are cached in short-term transients.
 
 = Does Pylon SEO replace WordPress core sitemaps? =
 
@@ -111,15 +111,15 @@ Yes. Pylon SEO disables the WordPress core sitemap feature and replaces it with 
 
 == Screenshots ==
 
-1. Dashboard â€” at-a-glance SEO health, usage stats, and quick actions.
-2. Meta Editor â€” title and description editor with real-time preview.
-3. Schema Builder â€” visual schema type selector with JSON-LD output.
-4. Sitemap Manager â€” XML sitemap configuration with priority and changefreq controls.
-5. Redirect Manager â€” add, edit, import, and export redirects with 404 tracking.
-6. Content Analysis â€” readability and SEO checks in the post editor.
-7. Image SEO â€” media library scan for alt text, filenames, and oversized images.
-8. Content Freshness â€” dashboard showing stale posts with freshness scores.
-9. Link Assistant â€” internal link suggestions with one-click insertion.
+1. Dashboard — at-a-glance SEO health, usage stats, and quick actions.
+2. Meta Editor — title and description editor with real-time preview.
+3. Schema Builder — visual schema type selector with JSON-LD output.
+4. Sitemap Manager — XML sitemap configuration with priority and changefreq controls.
+5. Redirect Manager — add, edit, import, and export redirects with 404 tracking.
+6. Content Analysis — readability and SEO checks in the post editor.
+7. Image SEO — media library scan for alt text, filenames, and oversized images.
+8. Content Freshness — dashboard showing stale posts with freshness scores.
+9. Link Assistant — internal link suggestions with one-click insertion.
 
 == Changelog ==
 
@@ -154,6 +154,9 @@ Yes. Pylon SEO disables the WordPress core sitemap feature and replaces it with 
 * Full i18n support with textdomain `pylon-seo`.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Fixed mojibake characters and hardened JSON-LD output.
 
 = 1.0.0 =
 Initial release.
