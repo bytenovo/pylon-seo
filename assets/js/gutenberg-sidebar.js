@@ -281,7 +281,7 @@
             return function () { window.removeEventListener('pylon-score-updated', onScoreUpdated); };
         }, []);
 
-        var score = (serverScoreState > 0) ? serverScoreState : jsScore;
+        var score = jsScore;
 
         var fieldsDef = [
             { key: 'pylon_title', label: __('SEO Title', 'pylon-seo'), type: 'text' },
@@ -317,6 +317,8 @@
             if (postId) pylonRecalcGutenScore(postId);
         }
 
+        var kwLimit = (window.pylonGutenbergData && window.pylonGutenbergData.kw_limit) || 5;
+
         function renderTextField(field) {
             var val = meta[field.key] || '';
             if (field.type === 'textarea') {
@@ -326,10 +328,25 @@
                     onChange: function (v) { updateMeta(field.key, v); }
                 });
             }
+            var onChange = function (v) { updateMeta(field.key, v); };
+            var help = null;
+            if (field.key === 'pylon_focus_keyword') {
+                onChange = function (v) {
+                    var parts = v.split(',').map(function(s){ return s.trim(); }).filter(function(s){ return s; });
+                    if (parts.length > kwLimit) {
+                        parts = parts.slice(0, kwLimit);
+                        v = parts.join(', ');
+                    }
+                    updateMeta(field.key, v);
+                };
+                var count = val.split(',').map(function(s){ return s.trim(); }).filter(function(s){ return s; }).length;
+                help = count + ' / ' + kwLimit + ' keywords';
+            }
             return el(TextControl, {
                 label: field.label,
                 value: val,
-                onChange: function (v) { updateMeta(field.key, v); }
+                help: help,
+                onChange: onChange
             });
         }
 

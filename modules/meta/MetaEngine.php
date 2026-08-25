@@ -314,7 +314,7 @@ class MetaEngine {
                                     <?php
                                     $raw_kw = $vals['pylon_focus_keyword'];
                                     $kw_list = array_filter(array_map('trim', explode(',', $raw_kw)));
-                                    $kw_limit = 999;
+                                    $kw_limit = 5;
                                     ?>
                                     <div class="pylon-tag-wrapper" id="pylon-kw-wrapper" data-limit="<?php echo (int) $kw_limit; ?>">
                                         <input type="hidden" name="pylon_focus_keyword" id="pylon_focus_keyword" value="<?php echo esc_attr($raw_kw); ?>">

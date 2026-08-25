@@ -102,6 +102,7 @@ class GutenbergSidebar {
             'permalink' => $post ? get_permalink($post) : '',
             'slug' => $post ? $post->post_name : '',
             'schema_types' => $schema_types,
+            'kw_limit' => 5,
             'full_edit_url' => $post_id ? admin_url('post.php?post=' . $post_id . '&action=edit#pylon_meta_box') : '',
             'engine_overall' => $engine_overall,
             'content_text' => $content_text,

@@ -457,7 +457,7 @@
   }
 
   function pylonUpdateScore(serverScore) {
-    var score = (typeof serverScore !== 'undefined' && serverScore) ? serverScore : (window.pylonServerScore || pylonCalcScore());
+    var score = pylonCalcScore();
     var $num = $('#pylon-score-num');
     var $label = $('#pylon-score-label');
     var $arc = $('#pylon-score-arc');
@@ -664,12 +664,8 @@
     $('#pylon-adash-num').closest('.pylon-adash').find('.pylon-adash-stat.ok .pylon-adash-stat-val').text(passCount);
     $('#pylon-adash-num').closest('.pylon-adash').find('.pylon-adash-stat.no .pylon-adash-stat-val').text(failCount);
 
-    // Update gauge — use server score when available, JS calc as fallback
-    // In Gutenberg the AJAX recalc is skipped, so use the server-provided
-    // engine_overall to keep the metabox gauge identical to the sidebar.
-    var gaugeScore = window.pylonServerScore
-      || (window.pylonPageBuilderData && window.pylonPageBuilderData.engine_overall)
-      || pylonCalcScore();
+    // Always use live JS calc for instant feedback while typing.
+    var gaugeScore = pylonCalcScore();
     pylonUpdateGauge(gaugeScore);
 
     // Update category scores
