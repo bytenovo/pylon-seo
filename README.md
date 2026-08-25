@@ -117,6 +117,12 @@ Yes. It disables the core sitemap and replaces it with a customizable XML sitema
 
 ## Changelog
 
+### 1.0.2
+* Fixed Import/Export tools: file upload, export download, and Pylon-native format support.
+* Fixed real-time SEO score update in post editor.
+* Added 5-keyword focus limit for free version.
+* Fixed Windows path handling in file uploads.
+
 ### 1.0.1
 * Review hardening: JSON-LD output now emitted via wp_print_inline_script_tag().
 * Fixed mojibake (double-encoded UTF-8) characters in admin dashboard labels.

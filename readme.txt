@@ -4,7 +4,7 @@ Tags: seo, schema, sitemap, redirects, content analysis
 Requires at least: 6.4
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -123,6 +123,12 @@ Yes. Pylon SEO disables the WordPress core sitemap feature and replaces it with 
 
 == Changelog ==
 
+= 1.0.2 =
+* Fixed Import/Export tools: file upload, export download, and Pylon-native format support.
+* Fixed real-time SEO score update in post editor.
+* Added 5-keyword focus limit for free version.
+* Fixed Windows path handling in file uploads.
+
 = 1.0.1 =
 * Review hardening: JSON-LD output now emitted via wp_print_inline_script_tag().
 * Fixed mojibake (double-encoded UTF-8) characters in admin dashboard labels.
@@ -154,6 +160,9 @@ Yes. Pylon SEO disables the WordPress core sitemap feature and replaces it with 
 * Full i18n support with textdomain `pylon-seo`.
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+Fixed Import/Export tools and real-time score updates.
 
 = 1.0.1 =
 Fixed mojibake characters and hardened JSON-LD output.
