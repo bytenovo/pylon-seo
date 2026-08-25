@@ -22,11 +22,10 @@ class MigratorEngine {
         add_action('wp_ajax_pylon_migrate', [$this, 'ajax_migrate']);
         add_action('wp_ajax_pylon_import_file', [$this, 'ajax_import_file']);
         add_action('wp_ajax_pylon_export', [$this, 'ajax_export']);
-        add_action('admin_enqueue_scripts', [$this, 'enqueue']);
     }
 
     public function enqueue(string $hook): void {
-        if (strpos($hook, 'pylon-migrate') === false) return;
+        if (strpos($hook, 'pylon-group-tools') === false && strpos($hook, 'pylon-migrator') === false && strpos($hook, 'pylon-migrate') === false) return;
         \Pylon\Core\Modules\Admin\AdminEngine::add_module_js($this->js());
     }
 
@@ -36,6 +35,7 @@ class MigratorEngine {
         $generating = esc_js(__('Generating...', 'pylon-seo'));
         $export_failed = esc_js(__('Export failed.', 'pylon-seo'));
         $download_export = esc_js(__('Download Export ZIP', 'pylon-seo'));
+        $spinner = '<span class=\'pylon-spinner pylon-spinner-sm\' style=\'vertical-align:middle;margin-right:6px;\'></span>';
         return '
         jQuery(function($) {
             $(document).on("click", ".pylon-run-migration", function() {
@@ -80,21 +80,26 @@ class MigratorEngine {
 
             $("#pylon-export-btn").on("click", function(e) {
                 e.preventDefault();
-                var btn = $(this).prop("disabled", true).text("' . $generating . '");
+                var btn = $(this).prop("disabled", true).html("' . $spinner . ' ' . $generating . '");
                 $.ajax({
                     url: "' . $ajax_url . '",
                     type: "POST",
                     data: { action: "pylon_export", _wpnonce: "' . $export_nonce . '" },
-                    xhrFields: { responseType: "blob" },
-                    success: function(blob, status, xhr) {
-                        var cd = xhr.getResponseHeader("Content-Disposition");
-                        var fn = "pylon-export.zip";
-                        if (cd) { var m = cd.match(/filename=(.+)/); if (m) fn = m[1]; }
-                        var a = document.createElement("a");
-                        a.href = URL.createObjectURL(blob);
-                        a.download = fn;
-                        a.click();
-                        URL.revokeObjectURL(a.href);
+                    dataType: "json",
+                    success: function(res) {
+                        if (res.success && res.data && res.data.data) {
+                            var raw = atob(res.data.data);
+                            var arr = new Uint8Array(raw.length);
+                            for (var i = 0; i < raw.length; i++) arr[i] = raw.charCodeAt(i);
+                            var blob = new Blob([arr], { type: "application/zip" });
+                            var a = document.createElement("a");
+                            a.href = URL.createObjectURL(blob);
+                            a.download = res.data.filename || "pylon-export.zip";
+                            a.click();
+                            URL.revokeObjectURL(a.href);
+                        } else {
+                            alert(res.data && res.data.message ? res.data.message : "' . $export_failed . '");
+                        }
                     },
                     error: function() {
                         alert("' . $export_failed . '");
@@ -198,21 +203,21 @@ class MigratorEngine {
                     <div id="pylon-file-result" class="pylon-hidden pylon-mt-12"></div>
                 </div>
             </div>
-        </div>
 
-        <div class="pylon-card">
-            <div class="pylon-card-header">
-                <h3><?php esc_html_e('Export Pylon Data', 'pylon-seo'); ?></h3>
-            </div>
-            <div class="pylon-card-body">
-                <p class="pylon-color-muted pylon-mb-16"><?php esc_html_e('Download all Pylon SEO data as a ZIP file containing:', 'pylon-seo'); ?></p>
-                <ul class="pylon-mb-16" style="list-style:disc;padding-left:20px;font-size:13px;color:var(--pylon-gray-600);">
-                    <li><strong>meta.csv</strong> — all post SEO metadata (title, description, keyword, OG, Twitter, schema)</li>
-                    <li><strong>redirects.csv</strong> — all redirect rules</li>
-                    <li><strong>settings.json</strong> — all Pylon settings and configuration</li>
-                </ul>
-                <button type="button" class="pylon-btn pylon-btn-primary" id="pylon-export-btn"><?php esc_html_e('Download Export ZIP', 'pylon-seo'); ?></button>
-                <div id="pylon-export-status" class="pylon-mt-12 pylon-hidden"></div>
+            <div class="pylon-card">
+                <div class="pylon-card-header">
+                    <h3><?php esc_html_e('Export Pylon Data', 'pylon-seo'); ?></h3>
+                </div>
+                <div class="pylon-card-body">
+                    <p class="pylon-color-muted pylon-mb-16"><?php esc_html_e('Download all Pylon SEO data as a ZIP file containing:', 'pylon-seo'); ?></p>
+                    <ul class="pylon-mb-16" style="list-style:disc;padding-left:20px;font-size:13px;color:var(--pylon-gray-600);">
+                        <li><strong>meta.csv</strong> — all post SEO metadata (title, description, keyword, OG, Twitter, schema)</li>
+                        <li><strong>redirects.csv</strong> — all redirect rules</li>
+                        <li><strong>settings.json</strong> — all Pylon settings and configuration</li>
+                    </ul>
+                    <button type="button" class="pylon-btn pylon-btn-primary" id="pylon-export-btn"><?php esc_html_e('Download Export ZIP', 'pylon-seo'); ?></button>
+                    <div id="pylon-export-status" class="pylon-mt-12 pylon-hidden"></div>
+                </div>
             </div>
         </div>
         <?php
@@ -255,7 +260,7 @@ class MigratorEngine {
         $file = [
             'name' => isset($_FILES['import_file']['name']) ? sanitize_file_name(wp_unslash($_FILES['import_file']['name'])) : '',
             'size' => absint($_FILES['import_file']['size'] ?? 0),
-            'tmp_name' => isset($_FILES['import_file']['tmp_name']) ? sanitize_text_field(wp_unslash($_FILES['import_file']['tmp_name'])) : '',
+            'tmp_name' => $_FILES['import_file']['tmp_name'] ?? '',
             'error' => absint($_FILES['import_file']['error'] ?? 0),
         ];
         $ext = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
@@ -296,18 +301,18 @@ class MigratorEngine {
 
     public function ajax_export(): void {
         if (!wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['_wpnonce'] ?? '')), 'pylon_export') || !current_user_can('manage_options')) {
-            wp_die(esc_html__('Unauthorized.', 'pylon-seo'));
+            wp_send_json_error(['message' => __('Unauthorized.', 'pylon-seo')]);
         }
 
         try {
             $tmp = wp_tempnam('pylon-export');
             if (!$tmp) {
-                wp_die(esc_html__('Cannot create temp file.', 'pylon-seo'));
+                wp_send_json_error(['message' => __('Cannot create temp file.', 'pylon-seo')]);
             }
 
             $zip = new \ZipArchive();
             if ($zip->open($tmp, \ZipArchive::CREATE) !== true) {
-                wp_die(esc_html__('Cannot create ZIP archive.', 'pylon-seo'));
+                wp_send_json_error(['message' => __('Cannot create ZIP archive.', 'pylon-seo')]);
             }
 
             global $wpdb;
@@ -352,15 +357,16 @@ class MigratorEngine {
 
             $zip->close();
 
-            header('Content-Type: application/zip');
-            header('Content-Disposition: attachment; filename="pylon-export-' . current_time('Y-m-d') . '.zip"');
-            header('Content-Length: ' . filesize($tmp));
-            echo file_get_contents($tmp); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Binary ZIP download cannot be escaped.
+            $zip_content = file_get_contents($tmp);
             wp_delete_file($tmp);
-            exit;
+            wp_send_json_success([
+                'message' => __('Export ready.', 'pylon-seo'),
+                'data' => base64_encode($zip_content),
+                'filename' => 'pylon-export-' . current_time('Y-m-d') . '.zip',
+            ]);
 
         } catch (\Throwable $e) {
-            wp_die(esc_html($e->getMessage()));
+            wp_send_json_error(['message' => $e->getMessage()]);
         }
     }
 
@@ -368,6 +374,14 @@ class MigratorEngine {
         $zip = new \ZipArchive();
         if ($zip->open($tmp_path) !== true) {
             throw new \Exception(esc_html__('Cannot open ZIP file.', 'pylon-seo'));
+        }
+
+        $meta_csv = $zip->getFromName('meta.csv');
+
+        if ($meta_csv !== false) {
+            $result = $this->import_pylon_zip_contents($zip);
+            $zip->close();
+            return $result;
         }
 
         $json = $zip->getFromName('settings.json');
@@ -417,12 +431,87 @@ class MigratorEngine {
         return ['meta' => $meta, 'redirects' => 0, 'settings' => 0];
     }
 
+    private function import_pylon_zip_contents(\ZipArchive $zip): array {
+        $meta = 0;
+        $redirects = 0;
+        $settings = 0;
+
+        $meta_csv = $zip->getFromName('meta.csv');
+        if ($meta_csv !== false) {
+            $tmp = wp_tempnam('pylon-csv');
+            file_put_contents($tmp, $meta_csv);
+            $result = $this->import_generic_csv($tmp);
+            wp_delete_file($tmp);
+            $meta = $result['meta'];
+        }
+
+        $redirects_csv = $zip->getFromName('redirects.csv');
+        if ($redirects_csv !== false && class_exists('Pylon\Core\Modules\Redirects\RedirectEngine')) {
+            global $wpdb;
+            $table = $wpdb->prefix . 'pylon_redirects';
+            $table_exists = $wpdb->get_var("SHOW TABLES LIKE '{$table}'") === $table;
+            if ($table_exists) {
+                $tmp = wp_tempnam('pylon-redir');
+                file_put_contents($tmp, $redirects_csv);
+                $fh = fopen($tmp, 'r');
+                if ($fh) {
+                    fgetcsv($fh);
+                    while (($row = fgetcsv($fh)) !== false) {
+                        $from = esc_url_raw($row[0] ?? '');
+                        $to = esc_url_raw($row[1] ?? '');
+                        $type = (int) ($row[2] ?? 301);
+                        if ($from && $to) {
+                            $wpdb->query($wpdb->prepare("INSERT IGNORE INTO {$table} (source_url, target_url, type) VALUES (%s, %s, %d)", $from, $to, $type));
+                            $redirects += $wpdb->rows_affected;
+                        }
+                    }
+                    fclose($fh);
+                }
+                wp_delete_file($tmp);
+            }
+        }
+
+        $settings_json = $zip->getFromName('settings.json');
+        if ($settings_json !== false) {
+            $data = json_decode($settings_json, true);
+            if (is_array($data)) {
+                foreach ($data as $key => $value) {
+                    if (strpos($key, 'pylon_') === 0) {
+                        update_option($key, $value);
+                        $settings++;
+                    }
+                }
+            }
+        }
+
+        return ['meta' => $meta, 'redirects' => $redirects, 'settings' => $settings];
+    }
+
     private function import_aioseo_json(string $tmp_path): array {
         $json = file_get_contents($tmp_path);
         $data = json_decode($json, true);
 
         if (!$data) {
             throw new \Exception(esc_html__('Invalid JSON file.', 'pylon-seo'));
+        }
+
+        $pylon_keys = 0;
+        foreach ($data as $key => $value) {
+            if (is_string($key) && strpos($key, 'pylon_') === 0) {
+                $pylon_keys++;
+                break;
+            }
+        }
+
+        if ($pylon_keys > 0) {
+            $settings = 0;
+            foreach ($data as $key => $value) {
+                if (is_string($key) && strpos($key, 'pylon_') === 0) {
+                    update_option($key, $value);
+                    $settings++;
+                }
+            }
+            return ['meta' => 0, 'redirects' => 0, 'settings' => $settings];
         }
 
         $meta = 0;

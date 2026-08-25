@@ -276,12 +276,19 @@
         var setServerScoreState = _ss[1];
 
         useEffect(function () {
-            function onScoreUpdated(e) { setServerScoreState(e.detail.overall || 0); }
+            function onScoreUpdated(e) {
+                setServerScoreState(e.detail.overall || 0);
+                setUserEdited(false);
+            }
             window.addEventListener('pylon-score-updated', onScoreUpdated);
             return function () { window.removeEventListener('pylon-score-updated', onScoreUpdated); };
         }, []);
 
-        var score = jsScore;
+        var _se = useState(false);
+        var userEdited = _se[0];
+        var setUserEdited = _se[1];
+
+        var score = userEdited ? jsScore : (serverScoreState || jsScore);
 
         var fieldsDef = [
             { key: 'pylon_title', label: __('SEO Title', 'pylon-seo'), type: 'text' },
@@ -312,6 +319,7 @@
         var [activeTab, setActiveTab] = useState('general');
 
         function updateMeta(key, value) {
+            setUserEdited(true);
             editPost({ meta: Object.assign({}, meta, { [key]: value }) });
             var postId = wp.data.select('core/editor').getCurrentPostId();
             if (postId) pylonRecalcGutenScore(postId);

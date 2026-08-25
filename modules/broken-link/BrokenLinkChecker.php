@@ -17,7 +17,7 @@ class BrokenLinkChecker {
     }
 
     public function enqueue(string $hook): void {
-        if (strpos($hook, 'pylon-broken-links') === false) return;
+        if (strpos($hook, 'pylon-broken-link') === false) return;
         wp_enqueue_style('pylon-broken-link', PYLON_URL . 'assets/css/modules/broken-link.css', ['pylon-admin'], filemtime(PYLON_PATH . 'assets/css/modules/broken-link.css'));
     }
 

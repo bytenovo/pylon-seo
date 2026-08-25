@@ -311,6 +311,7 @@
 
   // ─── Score: JS formula for instant feedback, AJAX for authoritative ───
   var _pylonScoreTimer = null;
+  var _pylonUserEdited = false;
 
   function pylonRecalcScore() {
     if (typeof wp !== 'undefined' && wp.data && wp.data.select('core/editor')) return;
@@ -342,6 +343,7 @@
         if (res.success && res.data && typeof res.data.overall !== 'undefined') {
           window.pylonServerScore = parseInt(res.data.overall) || 0;
           if (window.pylonPageBuilderData) window.pylonPageBuilderData.engine_overall = window.pylonServerScore;
+          _pylonUserEdited = false;
           pylonUpdateGauge(window.pylonServerScore);
           pylonUpdateScore(window.pylonServerScore);
         }
@@ -457,7 +459,7 @@
   }
 
   function pylonUpdateScore(serverScore) {
-    var score = pylonCalcScore();
+    var score = _pylonUserEdited ? pylonCalcScore() : (window.pylonServerScore || pylonCalcScore());
     var $num = $('#pylon-score-num');
     var $label = $('#pylon-score-label');
     var $arc = $('#pylon-score-arc');
@@ -664,8 +666,8 @@
     $('#pylon-adash-num').closest('.pylon-adash').find('.pylon-adash-stat.ok .pylon-adash-stat-val').text(passCount);
     $('#pylon-adash-num').closest('.pylon-adash').find('.pylon-adash-stat.no .pylon-adash-stat-val').text(failCount);
 
-    // Always use live JS calc for instant feedback while typing.
-    var gaugeScore = pylonCalcScore();
+    // Use live JS calc while typing, server score on load and after AJAX.
+    var gaugeScore = _pylonUserEdited ? pylonCalcScore() : (window.pylonServerScore || pylonCalcScore());
     pylonUpdateGauge(gaugeScore);
 
     // Update category scores
@@ -701,6 +703,7 @@
 
   // ─── Live updates on input ───
   $(document).on('input', '#pylon_title, #pylon_description, #pylon_focus_keyword, #pylon_og_title, #pylon_og_description, #pylon_twitter_title, #pylon_twitter_description, #pylon_canonical', function () {
+    _pylonUserEdited = true;
     pylonUpdateAll();
   });
 
