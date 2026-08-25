@@ -665,7 +665,11 @@
     $('#pylon-adash-num').closest('.pylon-adash').find('.pylon-adash-stat.no .pylon-adash-stat-val').text(failCount);
 
     // Update gauge — use server score when available, JS calc as fallback
-    var gaugeScore = window.pylonServerScore || pylonCalcScore();
+    // In Gutenberg the AJAX recalc is skipped, so use the server-provided
+    // engine_overall to keep the metabox gauge identical to the sidebar.
+    var gaugeScore = window.pylonServerScore
+      || (window.pylonPageBuilderData && window.pylonPageBuilderData.engine_overall)
+      || pylonCalcScore();
     pylonUpdateGauge(gaugeScore);
 
     // Update category scores
@@ -736,6 +740,11 @@
 
   // ─── Initial update on page load + force meta box open ───
   $(function () {
+    // Seed server score from inline data (available after inline scripts run).
+    var pb = window.pylonPageBuilderData;
+    if (pb && pb.engine_overall > 0) {
+      window.pylonServerScore = pb.engine_overall;
+    }
     if ($('#pylon_meta_box').length) {
       // Force meta box open
       var $box = $('#pylon_meta_box');
